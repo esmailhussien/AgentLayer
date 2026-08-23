@@ -9,7 +9,7 @@ This file tracks upstream repositories, specifications, and references evaluated
 | Source | Area | Status |
 |---|---|---|
 | Agent Skills specification | Skill format | Research |
-| [obra/superpowers](https://github.com/obra/superpowers) | Planning, debugging, testing, verification | Imported (`systematic-debugging`) / Research (other skills) |
+| [obra/superpowers](https://github.com/obra/superpowers) | Planning, debugging, testing, verification | Imported (`systematic-debugging`, `verification-before-completion`) / Research (other skills) |
 | Vercel Agent Skills | Frontend, React, performance | Research |
 | GitHub Awesome Copilot | Security and specialized workflows | Research |
 | Supabase Agent Skills | Database, Postgres, Supabase | Research |
@@ -33,6 +33,20 @@ This file tracks upstream repositories, specifications, and references evaluated
 - **Modification Status:**
   - Implementation files: Unchanged (faithful vendoring).
   - Test files: Updated skill reference path to AgentLayer directory structure (`skills/systematic-debugging`).
+
+### verification-before-completion
+
+- **Source Repository:** `https://github.com/obra/superpowers`
+- **Upstream Path:** `skills/verification-before-completion/`
+- **License:** MIT (see [third_party/superpowers/LICENSE](file:///d:/AgentLayer/third_party/superpowers/LICENSE))
+- **Imported Commit SHA:** `b36e0829c6d0140e93cfef2ca599b1b07d4a7797`
+- **Import Date:** 2026-08-24
+- **Local AgentLayer Paths:**
+  - Production Skill: [skills/verification/](file:///d:/AgentLayer/skills/verification/) (`SKILL.md`, `UPSTREAM.md`)
+  - License/Notice: [third_party/superpowers/](file:///d:/AgentLayer/third_party/superpowers/) (`LICENSE`, `NOTICE.md`)
+- **Modification Status:**
+  - Implementation file: Unchanged (byte-for-byte faithful vendoring).
+  - Note: Local directory is `skills/verification/`, upstream skill name is `verification-before-completion`.
 
 ---
 
