@@ -9,11 +9,30 @@ This file tracks upstream repositories, specifications, and references evaluated
 | Source | Area | Status |
 |---|---|---|
 | Agent Skills specification | Skill format | Research |
-| obra/superpowers | Planning, debugging, testing, verification | Research |
+| [obra/superpowers](https://github.com/obra/superpowers) | Planning, debugging, testing, verification | Imported (`systematic-debugging`) / Research (other skills) |
 | Vercel Agent Skills | Frontend, React, performance | Research |
 | GitHub Awesome Copilot | Security and specialized workflows | Research |
 | Supabase Agent Skills | Database, Postgres, Supabase | Research |
 | OpenAI skills/resources | AI agents and skill evaluation | Research |
+
+---
+
+## Imported Material Details
+
+### systematic-debugging
+
+- **Source Repository:** `https://github.com/obra/superpowers`
+- **Upstream Path:** `skills/systematic-debugging/`
+- **License:** MIT (see [third_party/superpowers/LICENSE](file:///d:/AgentLayer/third_party/superpowers/LICENSE))
+- **Imported Commit SHA:** `b36e0829c6d0140e93cfef2ca599b1b07d4a7797`
+- **Import Date:** 2026-08-24
+- **Local AgentLayer Paths:**
+  - Production Skill: [skills/systematic-debugging/](file:///d:/AgentLayer/skills/systematic-debugging/) (`SKILL.md`, `condition-based-waiting.md`, `condition-based-waiting-example.ts`, `defense-in-depth.md`, `find-polluter.sh`, `root-cause-tracing.md`, `UPSTREAM.md`)
+  - Test Scenarios: [tests/upstream/superpowers/systematic-debugging/](file:///d:/AgentLayer/tests/upstream/superpowers/systematic-debugging/) (`test-academic.md`, `test-pressure-1.md`, `test-pressure-2.md`, `test-pressure-3.md`, `README.md`)
+  - License/Notice: [third_party/superpowers/](file:///d:/AgentLayer/third_party/superpowers/) (`LICENSE`, `NOTICE.md`)
+- **Modification Status:**
+  - Implementation files: Unchanged (faithful vendoring).
+  - Test files: Updated skill reference path to AgentLayer directory structure (`skills/systematic-debugging`).
 
 ---
 
