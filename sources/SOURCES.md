@@ -11,7 +11,8 @@ This file tracks upstream repositories, specifications, and references evaluated
 | Agent Skills specification | Skill format | Research |
 | [obra/superpowers](https://github.com/obra/superpowers) | Planning, debugging, verification | Imported (`systematic-debugging`, `verification-before-completion`, `brainstorming`, `writing-plans`) / Research (other skills) |
 | [arjunprabhulal/agent-skills](https://github.com/arjunprabhulal/agent-skills) | Quality Assurance, Testing, TDD | Imported (`unit-testing`, `integration-testing`, `browser-testing`, `test-driven-development`) / Research (other skills) |
-| Vercel Agent Skills | Frontend, React, performance | Research |
+| [vercel-labs/open-agents](https://github.com/vercel-labs/open-agents) | Frontend Design & UI Quality | Imported (`frontend-design`) / Research (other skills) |
+| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | React & Next.js Performance | Imported (`react-best-practices`) / Research (other skills) |
 | GitHub Awesome Copilot | Security and specialized workflows | Research |
 | Supabase Agent Skills | Database, Postgres, Supabase | Research |
 | OpenAI skills/resources | AI agents and skill evaluation | Research |
@@ -132,6 +133,32 @@ This file tracks upstream repositories, specifications, and references evaluated
   - License/Notice: [third_party/arjunprabhulal-agent-skills/](file:///d:/AgentLayer/third_party/arjunprabhulal-agent-skills/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:**
   - Implementation files: Unchanged (byte-for-byte faithful vendoring).
+
+### frontend-design
+
+- **Source Repository:** `https://github.com/vercel-labs/open-agents`
+- **Upstream Path:** `.agents/skills/frontend-design/`
+- **License:** MIT (see [third_party/vercel-open-agents/LICENSE](file:///d:/AgentLayer/third_party/vercel-open-agents/LICENSE))
+- **Imported Commit SHA:** `cf865e94de7729751c747171785b6ce57e7b178c`
+- **Import Date:** 2026-08-24
+- **Local AgentLayer Paths:**
+  - Production Skill: [skills/frontend-design/](file:///d:/AgentLayer/skills/frontend-design/) (`SKILL.md`, `UPSTREAM.md`)
+  - License/Notice: [third_party/vercel-open-agents/](file:///d:/AgentLayer/third_party/vercel-open-agents/) (`LICENSE`, `NOTICE.md`)
+- **Modification Status:**
+  - Implementation files: Unchanged (byte-for-byte faithful vendoring).
+
+### react-best-practices
+
+- **Source Repository:** `https://github.com/vercel-labs/agent-skills`
+- **Upstream Path:** `skills/react-best-practices/`
+- **License:** MIT (see [third_party/vercel-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/vercel-agent-skills/LICENSE))
+- **Imported Commit SHA:** `dd089a8c752c966dee8bf0f27cb625ba193ffd9e`
+- **Import Date:** 2026-08-24
+- **Local AgentLayer Paths:**
+  - Production Skill: [skills/react-best-practices/](file:///d:/AgentLayer/skills/react-best-practices/) (`SKILL.md`, `AGENTS.md`, `metadata.json`, `README.md`, `rules/`, `UPSTREAM.md`)
+  - License/Notice: [third_party/vercel-agent-skills/](file:///d:/AgentLayer/third_party/vercel-agent-skills/) (`LICENSE`, `NOTICE.md`)
+- **Modification Status:**
+  - Implementation files: Unchanged (faithful vendoring).
 
 ---
 
