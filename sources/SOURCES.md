@@ -14,8 +14,8 @@ This file tracks upstream repositories, specifications, and references evaluated
 | [vercel-labs/open-agents](https://github.com/vercel-labs/open-agents) | Frontend Design & UI Quality | Imported (`frontend-design`) / Research (other skills) |
 | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | React & Next.js Performance | Imported (`react-best-practices`) / Research (other skills) |
 | [mblode/agent-skills](https://github.com/mblode/agent-skills) | Codebase Architecture & Wayfinding | Imported (`codebase-architecture`) / Research (other skills) |
+| [supabase/agent-skills](https://github.com/supabase/agent-skills) | Database, Postgres, Supabase Platform | Imported (`supabase`, `supabase-postgres-best-practices`) / Research (other skills) |
 | GitHub Awesome Copilot | Security and specialized workflows | Research |
-| Supabase Agent Skills | Database, Postgres, Supabase | Research |
 | OpenAI skills/resources | AI agents and skill evaluation | Research |
 
 ---
@@ -174,6 +174,34 @@ This file tracks upstream repositories, specifications, and references evaluated
 - **Local AgentLayer Paths:**
   - Production Skill: [skills/codebase-architecture/](file:///d:/AgentLayer/skills/codebase-architecture/) (`SKILL.md`, `references/`, `UPSTREAM.md`)
   - License/Notice: [third_party/mblode-agent-skills/](file:///d:/AgentLayer/third_party/mblode-agent-skills/) (`LICENSE`, `NOTICE.md`)
+- **Modification Status:**
+  - Implementation files: Unchanged (byte-for-byte faithful vendoring).
+  - Behavioral modifications: None on initial import.
+
+### supabase
+
+- **Source Repository:** `https://github.com/supabase/agent-skills`
+- **Upstream Path:** `skills/supabase/`
+- **License:** MIT (see [third_party/supabase-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/supabase-agent-skills/LICENSE))
+- **Imported Commit SHA:** `8331f910845103c08d51f6ca1d86ebb7d1f745e3`
+- **Import Date:** 2026-08-24
+- **Local AgentLayer Paths:**
+  - Production Skill: [skills/supabase/](file:///d:/AgentLayer/skills/supabase/) (`SKILL.md`, `CHANGELOG.md`, `assets/`, `references/`, `UPSTREAM.md`)
+  - License/Notice: [third_party/supabase-agent-skills/](file:///d:/AgentLayer/third_party/supabase-agent-skills/) (`LICENSE`, `NOTICE.md`)
+- **Modification Status:**
+  - Implementation files: Unchanged (byte-for-byte faithful vendoring).
+  - Behavioral modifications: None on initial import.
+
+### supabase-postgres-best-practices
+
+- **Source Repository:** `https://github.com/supabase/agent-skills`
+- **Upstream Path:** `skills/supabase-postgres-best-practices/`
+- **License:** MIT (see [third_party/supabase-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/supabase-agent-skills/LICENSE))
+- **Imported Commit SHA:** `8331f910845103c08d51f6ca1d86ebb7d1f745e3`
+- **Import Date:** 2026-08-24
+- **Local AgentLayer Paths:**
+  - Production Skill: [skills/supabase-postgres-best-practices/](file:///d:/AgentLayer/skills/supabase-postgres-best-practices/) (`SKILL.md`, `CHANGELOG.md`, `references/`, `UPSTREAM.md`)
+  - License/Notice: [third_party/supabase-agent-skills/](file:///d:/AgentLayer/third_party/supabase-agent-skills/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:**
   - Implementation files: Unchanged (byte-for-byte faithful vendoring).
   - Behavioral modifications: None on initial import.
