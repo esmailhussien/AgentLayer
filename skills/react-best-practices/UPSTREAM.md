@@ -21,6 +21,6 @@ This skill is derived from the `react-best-practices` skill in `vercel-labs/agen
 
 Initial import:
 - Local behavioral modifications: none (faithful vendoring, byte-for-byte identical to upstream).
-- Upstream evals / tests: Evaluated upstream repository for eval cases; no standalone runtime eval dataset present in upstream repository for `react-best-practices`.
+- Upstream evals / tests: Imported rule evaluation test cases under `tests/upstream/vercel/react-best-practices/` (`test-cases.json` from `packages/react-best-practices-build/test-cases.json`).
 
 Any future AgentLayer modifications must be documented here.

@@ -146,6 +146,7 @@ This file tracks upstream repositories, specifications, and references evaluated
   - License/Notice: [third_party/vercel-open-agents/](file:///d:/AgentLayer/third_party/vercel-open-agents/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:**
   - Implementation files: Unchanged (byte-for-byte faithful vendoring).
+  - Behavioral modifications: None on initial import.
 
 ### react-best-practices
 
@@ -156,9 +157,11 @@ This file tracks upstream repositories, specifications, and references evaluated
 - **Import Date:** 2026-08-24
 - **Local AgentLayer Paths:**
   - Production Skill: [skills/react-best-practices/](file:///d:/AgentLayer/skills/react-best-practices/) (`SKILL.md`, `AGENTS.md`, `metadata.json`, `README.md`, `rules/`, `UPSTREAM.md`)
+  - Upstream Evals: [tests/upstream/vercel/react-best-practices/](file:///d:/AgentLayer/tests/upstream/vercel/react-best-practices/) (`test-cases.json`, `README.md`)
   - License/Notice: [third_party/vercel-agent-skills/](file:///d:/AgentLayer/third_party/vercel-agent-skills/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:**
   - Implementation files: Unchanged (faithful vendoring).
+  - Behavioral modifications: None on initial import.
 
 ---
 
