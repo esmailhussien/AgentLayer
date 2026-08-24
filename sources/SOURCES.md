@@ -13,6 +13,7 @@ This file tracks upstream repositories, specifications, and references evaluated
 | [arjunprabhulal/agent-skills](https://github.com/arjunprabhulal/agent-skills) | Quality Assurance, Testing, TDD | Imported (`unit-testing`, `integration-testing`, `browser-testing`, `test-driven-development`) / Research (other skills) |
 | [vercel-labs/open-agents](https://github.com/vercel-labs/open-agents) | Frontend Design & UI Quality | Imported (`frontend-design`) / Research (other skills) |
 | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | React & Next.js Performance | Imported (`react-best-practices`) / Research (other skills) |
+| [mblode/agent-skills](https://github.com/mblode/agent-skills) | Codebase Architecture & Wayfinding | Imported (`codebase-architecture`) / Research (other skills) |
 | GitHub Awesome Copilot | Security and specialized workflows | Research |
 | Supabase Agent Skills | Database, Postgres, Supabase | Research |
 | OpenAI skills/resources | AI agents and skill evaluation | Research |
@@ -161,6 +162,20 @@ This file tracks upstream repositories, specifications, and references evaluated
   - License/Notice: [third_party/vercel-agent-skills/](file:///d:/AgentLayer/third_party/vercel-agent-skills/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:**
   - Implementation files: Unchanged (faithful vendoring).
+  - Behavioral modifications: None on initial import.
+
+### codebase-architecture
+
+- **Source Repository:** `https://github.com/mblode/agent-skills`
+- **Upstream Path:** `skills/codebase-architecture/`
+- **License:** MIT (see [third_party/mblode-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/mblode-agent-skills/LICENSE))
+- **Imported Commit SHA:** `e97a3b383f5944f90d41eb92b24b4fb3b917a7f9`
+- **Import Date:** 2026-08-24
+- **Local AgentLayer Paths:**
+  - Production Skill: [skills/codebase-architecture/](file:///d:/AgentLayer/skills/codebase-architecture/) (`SKILL.md`, `references/`, `UPSTREAM.md`)
+  - License/Notice: [third_party/mblode-agent-skills/](file:///d:/AgentLayer/third_party/mblode-agent-skills/) (`LICENSE`, `NOTICE.md`)
+- **Modification Status:**
+  - Implementation files: Unchanged (byte-for-byte faithful vendoring).
   - Behavioral modifications: None on initial import.
 
 ---
