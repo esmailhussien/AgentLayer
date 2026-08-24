@@ -9,7 +9,8 @@ This file tracks upstream repositories, specifications, and references evaluated
 | Source | Area | Status |
 |---|---|---|
 | Agent Skills specification | Skill format | Research |
-| [obra/superpowers](https://github.com/obra/superpowers) | Planning, debugging, testing, verification | Imported (`systematic-debugging`, `verification-before-completion`, `brainstorming`, `writing-plans`) / Research (other skills) |
+| [obra/superpowers](https://github.com/obra/superpowers) | Planning, debugging, verification | Imported (`systematic-debugging`, `verification-before-completion`, `brainstorming`, `writing-plans`) / Research (other skills) |
+| [arjunprabhulal/agent-skills](https://github.com/arjunprabhulal/agent-skills) | Quality Assurance, Testing, TDD | Imported (`unit-testing`, `integration-testing`, `browser-testing`, `test-driven-development`) / Research (other skills) |
 | Vercel Agent Skills | Frontend, React, performance | Research |
 | GitHub Awesome Copilot | Security and specialized workflows | Research |
 | Supabase Agent Skills | Database, Postgres, Supabase | Research |
@@ -75,6 +76,62 @@ This file tracks upstream repositories, specifications, and references evaluated
   - License/Notice: [third_party/superpowers/](file:///d:/AgentLayer/third_party/superpowers/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:**
   - Implementation files: Unchanged (faithful vendoring).
+
+### unit-testing
+
+- **Source Repository:** `https://github.com/arjunprabhulal/agent-skills`
+- **Upstream Path:** `skills/qa/unit-testing/`
+- **License:** MIT (see [third_party/arjunprabhulal-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/arjunprabhulal-agent-skills/LICENSE))
+- **Imported Commit SHA:** `42dd24080fce6d731d00e2a1134f398c3da4171b`
+- **Import Date:** 2026-08-24
+- **Local AgentLayer Paths:**
+  - Production Skill: [skills/unit-testing/](file:///d:/AgentLayer/skills/unit-testing/) (`SKILL.md`, `UPSTREAM.md`)
+  - Upstream Evals: [tests/upstream/arjunprabhulal-agent-skills/unit-testing/](file:///d:/AgentLayer/tests/upstream/arjunprabhulal-agent-skills/unit-testing/) (`unit-testing.json`, `README.md`)
+  - License/Notice: [third_party/arjunprabhulal-agent-skills/](file:///d:/AgentLayer/third_party/arjunprabhulal-agent-skills/) (`LICENSE`, `NOTICE.md`)
+- **Modification Status:**
+  - Implementation files: Unchanged (byte-for-byte faithful vendoring).
+
+### integration-testing
+
+- **Source Repository:** `https://github.com/arjunprabhulal/agent-skills`
+- **Upstream Path:** `skills/qa/integration-testing/`
+- **License:** MIT (see [third_party/arjunprabhulal-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/arjunprabhulal-agent-skills/LICENSE))
+- **Imported Commit SHA:** `42dd24080fce6d731d00e2a1134f398c3da4171b`
+- **Import Date:** 2026-08-24
+- **Local AgentLayer Paths:**
+  - Production Skill: [skills/integration-testing/](file:///d:/AgentLayer/skills/integration-testing/) (`SKILL.md`, `UPSTREAM.md`)
+  - Upstream Evals: [tests/upstream/arjunprabhulal-agent-skills/integration-testing/](file:///d:/AgentLayer/tests/upstream/arjunprabhulal-agent-skills/integration-testing/) (`integration-testing.json`, `README.md`)
+  - License/Notice: [third_party/arjunprabhulal-agent-skills/](file:///d:/AgentLayer/third_party/arjunprabhulal-agent-skills/) (`LICENSE`, `NOTICE.md`)
+- **Modification Status:**
+  - Implementation files: Unchanged (byte-for-byte faithful vendoring).
+
+### browser-testing
+
+- **Source Repository:** `https://github.com/arjunprabhulal/agent-skills`
+- **Upstream Path:** `skills/qa/browser-testing/`
+- **License:** MIT (see [third_party/arjunprabhulal-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/arjunprabhulal-agent-skills/LICENSE))
+- **Imported Commit SHA:** `42dd24080fce6d731d00e2a1134f398c3da4171b`
+- **Import Date:** 2026-08-24
+- **Local AgentLayer Paths:**
+  - Production Skill: [skills/browser-testing/](file:///d:/AgentLayer/skills/browser-testing/) (`SKILL.md`, `UPSTREAM.md`)
+  - Upstream Evals: [tests/upstream/arjunprabhulal-agent-skills/browser-testing/](file:///d:/AgentLayer/tests/upstream/arjunprabhulal-agent-skills/browser-testing/) (`browser-testing.json`, `README.md`)
+  - License/Notice: [third_party/arjunprabhulal-agent-skills/](file:///d:/AgentLayer/third_party/arjunprabhulal-agent-skills/) (`LICENSE`, `NOTICE.md`)
+- **Modification Status:**
+  - Implementation files: Unchanged (byte-for-byte faithful vendoring).
+
+### test-driven-development
+
+- **Source Repository:** `https://github.com/arjunprabhulal/agent-skills`
+- **Upstream Path:** `skills/qa/test-driven-development/`
+- **License:** MIT (see [third_party/arjunprabhulal-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/arjunprabhulal-agent-skills/LICENSE))
+- **Imported Commit SHA:** `42dd24080fce6d731d00e2a1134f398c3da4171b`
+- **Import Date:** 2026-08-24
+- **Local AgentLayer Paths:**
+  - Production Skill: [skills/test-driven-development/](file:///d:/AgentLayer/skills/test-driven-development/) (`SKILL.md`, `UPSTREAM.md`)
+  - Upstream Evals: [tests/upstream/arjunprabhulal-agent-skills/test-driven-development/](file:///d:/AgentLayer/tests/upstream/arjunprabhulal-agent-skills/test-driven-development/) (`test-driven-development.json`, `README.md`)
+  - License/Notice: [third_party/arjunprabhulal-agent-skills/](file:///d:/AgentLayer/third_party/arjunprabhulal-agent-skills/) (`LICENSE`, `NOTICE.md`)
+- **Modification Status:**
+  - Implementation files: Unchanged (byte-for-byte faithful vendoring).
 
 ---
 
