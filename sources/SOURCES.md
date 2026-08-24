@@ -16,7 +16,7 @@ This file tracks upstream repositories, specifications, and references evaluated
 | [mblode/agent-skills](https://github.com/mblode/agent-skills) | Codebase Architecture & Wayfinding | Imported (`codebase-architecture`) / Research (other skills) |
 | [supabase/agent-skills](https://github.com/supabase/agent-skills) | Database, Postgres, Supabase Platform | Imported (`supabase`, `supabase-postgres-best-practices`) / Research (other skills) |
 | [github/awesome-copilot](https://github.com/github/awesome-copilot) | Codebase Security Review & Vulnerability Audit | Imported (`security-review`) / Research (other skills) |
-| OpenAI skills/resources | AI agents and skill evaluation | Research |
+| OpenAI / Vercel AI sources | AI chat, streaming, tool calling, agents | Research pending (no standalone generic skill imported; placeholders retained in `skills/ai-chat/`, `skills/ai-tools/`) |
 
 ---
 
