@@ -15,7 +15,7 @@ This file tracks upstream repositories, specifications, and references evaluated
 | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | React & Next.js Performance | Imported (`react-best-practices`) / Research (other skills) |
 | [mblode/agent-skills](https://github.com/mblode/agent-skills) | Codebase Architecture & Wayfinding | Imported (`codebase-architecture`) / Research (other skills) |
 | [supabase/agent-skills](https://github.com/supabase/agent-skills) | Database, Postgres, Supabase Platform | Imported (`supabase`, `supabase-postgres-best-practices`) / Research (other skills) |
-| GitHub Awesome Copilot | Security and specialized workflows | Research |
+| [github/awesome-copilot](https://github.com/github/awesome-copilot) | Codebase Security Review & Vulnerability Audit | Imported (`security-review`) / Research (other skills) |
 | OpenAI skills/resources | AI agents and skill evaluation | Research |
 
 ---
@@ -202,6 +202,20 @@ This file tracks upstream repositories, specifications, and references evaluated
 - **Local AgentLayer Paths:**
   - Production Skill: [skills/supabase-postgres-best-practices/](file:///d:/AgentLayer/skills/supabase-postgres-best-practices/) (`SKILL.md`, `CHANGELOG.md`, `references/`, `UPSTREAM.md`)
   - License/Notice: [third_party/supabase-agent-skills/](file:///d:/AgentLayer/third_party/supabase-agent-skills/) (`LICENSE`, `NOTICE.md`)
+- **Modification Status:**
+  - Implementation files: Unchanged (byte-for-byte faithful vendoring).
+  - Behavioral modifications: None on initial import.
+
+### security-review
+
+- **Source Repository:** `https://github.com/github/awesome-copilot`
+- **Upstream Path:** `skills/security-review/`
+- **License:** MIT (see [third_party/github-awesome-copilot/LICENSE](file:///d:/AgentLayer/third_party/github-awesome-copilot/LICENSE))
+- **Imported Commit SHA:** `8e03e6abebad103ad0b27fe66d8ec368264a7a22`
+- **Import Date:** 2026-08-24
+- **Local AgentLayer Paths:**
+  - Production Skill: [skills/security-review/](file:///d:/AgentLayer/skills/security-review/) (`SKILL.md`, `references/`, `UPSTREAM.md`)
+  - License/Notice: [third_party/github-awesome-copilot/](file:///d:/AgentLayer/third_party/github-awesome-copilot/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:**
   - Implementation files: Unchanged (byte-for-byte faithful vendoring).
   - Behavioral modifications: None on initial import.
