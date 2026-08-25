@@ -16,6 +16,13 @@ This file tracks upstream repositories, specifications, and references evaluated
 | [mblode/agent-skills](https://github.com/mblode/agent-skills) | Codebase Architecture & Wayfinding | Imported (`codebase-architecture`) / Research (other skills) |
 | [supabase/agent-skills](https://github.com/supabase/agent-skills) | Database, Postgres, Supabase Platform | Imported (`supabase`, `supabase-postgres-best-practices`) / Research (other skills) |
 | [github/awesome-copilot](https://github.com/github/awesome-copilot) | Codebase Security Review & Vulnerability Audit | Imported (`security-review`) / Research (other skills) |
+| [isaaccorley/geospatial-skills](https://github.com/isaaccorley/geospatial-skills) | GIS, GDAL, GeoParquet, GeoZarr, MapLibre | Imported (`gdal`, `geoparquet-validation`, `geozarr`, `geospatial-frontend`) / Research (other skills) |
+| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | Geospatial, Data Science, EDA, Statistics, Viz, Graphs | Imported (`geopandas`, `geomaster`, `exploratory-data-analysis`, `statistical-analysis`, `scientific-visualization`, `networkx`) |
+| [timescale/pg-aiguide](https://github.com/timescale/pg-aiguide) | Spatial Database Design (PostGIS) | Imported (`design-postgis-tables`) / Research (other skills) |
+| [jaakla/open-gis](https://github.com/jaakla/open-gis) | Open GIS Reference Stack | Rejected — license (no upstream license declared) |
+| [JPeetz/agent-skills](https://github.com/JPeetz/agent-skills) | General Data Analysis | Rejected — overlap (K-Dense EDA/statistics/viz provide modular coverage) |
+| [public-apis/public-apis](https://github.com/public-apis/public-apis) | Public & Free API Catalog Index | Research catalog reference for `api-discovery` |
+| AgentLayer Native | Public APIs & Open Data Orchestration | Created (`api-discovery`, `geospatial-data-discovery`, `api-integration`) |
 | OpenAI / Vercel AI sources | AI chat, streaming, tool calling, agents | Research pending (no standalone generic skill imported; placeholders retained in `skills/ai-chat/`, `skills/ai-tools/`) |
 
 ---
@@ -219,6 +226,163 @@ This file tracks upstream repositories, specifications, and references evaluated
 - **Modification Status:**
   - Implementation files: Unchanged (byte-for-byte faithful vendoring).
   - Behavioral modifications: None on initial import.
+
+### gdal
+
+- **Source Repository:** `https://github.com/isaaccorley/geospatial-skills`
+- **Upstream Path:** `skills/gdal/`
+- **License:** Apache-2.0 (see [third_party/isaaccorley-geospatial-skills/LICENSE](file:///d:/AgentLayer/third_party/isaaccorley-geospatial-skills/LICENSE))
+- **Imported Commit SHA:** `a203446cb997cd1dbf054918b1021a6040b69824`
+- **Import Date:** 2026-08-25
+- **Local AgentLayer Paths:**
+  - Production Skill: [skills/gdal/](file:///d:/AgentLayer/skills/gdal/) (`SKILL.md`, `references/`, `UPSTREAM.md`)
+  - License/Notice: [third_party/isaaccorley-geospatial-skills/](file:///d:/AgentLayer/third_party/isaaccorley-geospatial-skills/) (`LICENSE`, `NOTICE.md`)
+- **Modification Status:** Unchanged (byte-for-byte faithful vendoring).
+
+### geoparquet-validation
+
+- **Source Repository:** `https://github.com/isaaccorley/geospatial-skills`
+- **Upstream Path:** `skills/geoparquet-validation/`
+- **License:** Apache-2.0 (see [third_party/isaaccorley-geospatial-skills/LICENSE](file:///d:/AgentLayer/third_party/isaaccorley-geospatial-skills/LICENSE))
+- **Imported Commit SHA:** `a203446cb997cd1dbf054918b1021a6040b69824`
+- **Import Date:** 2026-08-25
+- **Local AgentLayer Paths:**
+  - Production Skill: [skills/geoparquet-validation/](file:///d:/AgentLayer/skills/geoparquet-validation/) (`SKILL.md`, `references/`, `UPSTREAM.md`)
+  - License/Notice: [third_party/isaaccorley-geospatial-skills/](file:///d:/AgentLayer/third_party/isaaccorley-geospatial-skills/) (`LICENSE`, `NOTICE.md`)
+- **Modification Status:** Unchanged (byte-for-byte faithful vendoring).
+
+### geozarr
+
+- **Source Repository:** `https://github.com/isaaccorley/geospatial-skills`
+- **Upstream Path:** `skills/geozarr/`
+- **License:** Apache-2.0 (see [third_party/isaaccorley-geospatial-skills/LICENSE](file:///d:/AgentLayer/third_party/isaaccorley-geospatial-skills/LICENSE))
+- **Imported Commit SHA:** `a203446cb997cd1dbf054918b1021a6040b69824`
+- **Import Date:** 2026-08-25
+- **Local AgentLayer Paths:**
+  - Production Skill: [skills/geozarr/](file:///d:/AgentLayer/skills/geozarr/) (`SKILL.md`, `UPSTREAM.md`)
+  - License/Notice: [third_party/isaaccorley-geospatial-skills/](file:///d:/AgentLayer/third_party/isaaccorley-geospatial-skills/) (`LICENSE`, `NOTICE.md`)
+- **Modification Status:** Unchanged (byte-for-byte faithful vendoring).
+
+### geospatial-frontend
+
+- **Source Repository:** `https://github.com/isaaccorley/geospatial-skills`
+- **Upstream Path:** `skills/geospatial-frontend/`
+- **License:** Apache-2.0 (see [third_party/isaaccorley-geospatial-skills/LICENSE](file:///d:/AgentLayer/third_party/isaaccorley-geospatial-skills/LICENSE))
+- **Imported Commit SHA:** `a203446cb997cd1dbf054918b1021a6040b69824`
+- **Import Date:** 2026-08-25
+- **Local AgentLayer Paths:**
+  - Production Skill: [skills/geospatial-frontend/](file:///d:/AgentLayer/skills/geospatial-frontend/) (`SKILL.md`, `references/`, `UPSTREAM.md`)
+  - License/Notice: [third_party/isaaccorley-geospatial-skills/](file:///d:/AgentLayer/third_party/isaaccorley-geospatial-skills/) (`LICENSE`, `NOTICE.md`)
+- **Modification Status:** Unchanged (byte-for-byte faithful vendoring).
+
+### geopandas
+
+- **Source Repository:** `https://github.com/K-Dense-AI/scientific-agent-skills`
+- **Upstream Path:** `skills/geopandas/`
+- **License:** MIT (see [third_party/kdense-scientific-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/kdense-scientific-agent-skills/LICENSE))
+- **Imported Commit SHA:** `390f5146bf3c1877cf15636a3dd7b775e4f0f185`
+- **Import Date:** 2026-08-25
+- **Local AgentLayer Paths:**
+  - Production Skill: [skills/geopandas/](file:///d:/AgentLayer/skills/geopandas/) (`SKILL.md`, `UPSTREAM.md`)
+  - Upstream Evals: [tests/upstream/kdense-scientific-agent-skills/geopandas/](file:///d:/AgentLayer/tests/upstream/kdense-scientific-agent-skills/geopandas/)
+  - License/Notice: [third_party/kdense-scientific-agent-skills/](file:///d:/AgentLayer/third_party/kdense-scientific-agent-skills/) (`LICENSE`, `NOTICE.md`)
+- **Modification Status:** Unchanged (byte-for-byte faithful vendoring).
+
+### geomaster
+
+- **Source Repository:** `https://github.com/K-Dense-AI/scientific-agent-skills`
+- **Upstream Path:** `skills/geomaster/`
+- **License:** MIT (see [third_party/kdense-scientific-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/kdense-scientific-agent-skills/LICENSE))
+- **Imported Commit SHA:** `390f5146bf3c1877cf15636a3dd7b775e4f0f185`
+- **Import Date:** 2026-08-25
+- **Local AgentLayer Paths:**
+  - Production Skill: [skills/geomaster/](file:///d:/AgentLayer/skills/geomaster/) (`SKILL.md`, `UPSTREAM.md`)
+  - License/Notice: [third_party/kdense-scientific-agent-skills/](file:///d:/AgentLayer/third_party/kdense-scientific-agent-skills/) (`LICENSE`, `NOTICE.md`)
+- **Modification Status:** Unchanged (byte-for-byte faithful vendoring).
+
+### design-postgis-tables
+
+- **Source Repository:** `https://github.com/timescale/pg-aiguide`
+- **Upstream Path:** `skills/design-postgis-tables/`
+- **License:** Apache-2.0 (see [third_party/timescale-pg-aiguide/LICENSE](file:///d:/AgentLayer/third_party/timescale-pg-aiguide/LICENSE))
+- **Imported Commit SHA:** `b4f11a45907af3abda0f79e784aff9a6d5eef468`
+- **Import Date:** 2026-08-25
+- **Local AgentLayer Paths:**
+  - Production Skill: [skills/design-postgis-tables/](file:///d:/AgentLayer/skills/design-postgis-tables/) (`SKILL.md`, `UPSTREAM.md`)
+  - License/Notice: [third_party/timescale-pg-aiguide/](file:///d:/AgentLayer/third_party/timescale-pg-aiguide/) (`LICENSE`, `NOTICE.md`)
+- **Modification Status:** Unchanged (byte-for-byte faithful vendoring).
+
+### exploratory-data-analysis
+
+- **Source Repository:** `https://github.com/K-Dense-AI/scientific-agent-skills`
+- **Upstream Path:** `skills/exploratory-data-analysis/`
+- **License:** MIT (see [third_party/kdense-scientific-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/kdense-scientific-agent-skills/LICENSE))
+- **Imported Commit SHA:** `390f5146bf3c1877cf15636a3dd7b775e4f0f185`
+- **Import Date:** 2026-08-25
+- **Local AgentLayer Paths:**
+  - Production Skill: [skills/exploratory-data-analysis/](file:///d:/AgentLayer/skills/exploratory-data-analysis/) (`SKILL.md`, `references/`, `scripts/`, `UPSTREAM.md`)
+  - Upstream Evals: [tests/upstream/kdense-scientific-agent-skills/exploratory-data-analysis/](file:///d:/AgentLayer/tests/upstream/kdense-scientific-agent-skills/exploratory-data-analysis/)
+  - License/Notice: [third_party/kdense-scientific-agent-skills/](file:///d:/AgentLayer/third_party/kdense-scientific-agent-skills/) (`LICENSE`, `NOTICE.md`)
+- **Modification Status:** Unchanged (byte-for-byte faithful vendoring).
+
+### statistical-analysis
+
+- **Source Repository:** `https://github.com/K-Dense-AI/scientific-agent-skills`
+- **Upstream Path:** `skills/statistical-analysis/`
+- **License:** MIT (see [third_party/kdense-scientific-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/kdense-scientific-agent-skills/LICENSE))
+- **Imported Commit SHA:** `390f5146bf3c1877cf15636a3dd7b775e4f0f185`
+- **Import Date:** 2026-08-25
+- **Local AgentLayer Paths:**
+  - Production Skill: [skills/statistical-analysis/](file:///d:/AgentLayer/skills/statistical-analysis/) (`SKILL.md`, `references/`, `scripts/`, `UPSTREAM.md`)
+  - Upstream Evals: [tests/upstream/kdense-scientific-agent-skills/statistical-analysis/](file:///d:/AgentLayer/tests/upstream/kdense-scientific-agent-skills/statistical-analysis/)
+  - License/Notice: [third_party/kdense-scientific-agent-skills/](file:///d:/AgentLayer/third_party/kdense-scientific-agent-skills/) (`LICENSE`, `NOTICE.md`)
+- **Modification Status:** Unchanged (byte-for-byte faithful vendoring).
+
+### scientific-visualization
+
+- **Source Repository:** `https://github.com/K-Dense-AI/scientific-agent-skills`
+- **Upstream Path:** `skills/scientific-visualization/`
+- **License:** MIT (see [third_party/kdense-scientific-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/kdense-scientific-agent-skills/LICENSE))
+- **Imported Commit SHA:** `390f5146bf3c1877cf15636a3dd7b775e4f0f185`
+- **Import Date:** 2026-08-25
+- **Local AgentLayer Paths:**
+  - Production Skill: [skills/scientific-visualization/](file:///d:/AgentLayer/skills/scientific-visualization/) (`SKILL.md`, `assets/`, `references/`, `scripts/`, `UPSTREAM.md`)
+  - Upstream Evals: [tests/upstream/kdense-scientific-agent-skills/scientific-visualization/](file:///d:/AgentLayer/tests/upstream/kdense-scientific-agent-skills/scientific-visualization/)
+  - License/Notice: [third_party/kdense-scientific-agent-skills/](file:///d:/AgentLayer/third_party/kdense-scientific-agent-skills/) (`LICENSE`, `NOTICE.md`)
+- **Modification Status:** Unchanged (byte-for-byte faithful vendoring).
+
+### networkx
+
+- **Source Repository:** `https://github.com/K-Dense-AI/scientific-agent-skills`
+- **Upstream Path:** `skills/networkx/`
+- **License:** 3-clause BSD (see [third_party/kdense-scientific-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/kdense-scientific-agent-skills/LICENSE))
+- **Imported Commit SHA:** `390f5146bf3c1877cf15636a3dd7b775e4f0f185`
+- **Import Date:** 2026-08-25
+- **Local AgentLayer Paths:**
+  - Production Skill: [skills/networkx/](file:///d:/AgentLayer/skills/networkx/) (`SKILL.md`, `references/`, `UPSTREAM.md`)
+  - License/Notice: [third_party/kdense-scientific-agent-skills/](file:///d:/AgentLayer/third_party/kdense-scientific-agent-skills/) (`LICENSE`, `NOTICE.md`)
+- **Modification Status:** Unchanged (byte-for-byte faithful vendoring).
+
+### api-discovery (AgentLayer Native)
+
+- **Author:** AgentLayer Team
+- **License:** MIT
+- **Local AgentLayer Path:** [skills/api-discovery/](file:///d:/AgentLayer/skills/api-discovery/) (`SKILL.md`, `references/source-catalogs.md`, `UPSTREAM.md`)
+- **References:** `public-apis/public-apis`, `public-api-lists/public-api-lists`
+
+### geospatial-data-discovery (AgentLayer Native)
+
+- **Author:** AgentLayer Team
+- **License:** MIT
+- **Local AgentLayer Path:** [skills/geospatial-data-discovery/](file:///d:/AgentLayer/skills/geospatial-data-discovery/) (`SKILL.md`, `UPSTREAM.md`)
+- **References:** OGC STAC/COG, OpenStreetMap (ODbL), Overture Maps, Copernicus Open Access
+
+### api-integration (AgentLayer Native)
+
+- **Author:** AgentLayer Team
+- **License:** MIT
+- **Local AgentLayer Path:** [skills/api-integration/](file:///d:/AgentLayer/skills/api-integration/) (`SKILL.md`, `references/integration-patterns.md`, `UPSTREAM.md`)
+- **References:** RFC 9110 HTTP Semantics, IETF RateLimit Headers, OpenAPI 3.1
 
 ---
 

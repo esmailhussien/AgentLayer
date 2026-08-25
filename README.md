@@ -1,6 +1,6 @@
 # AgentLayer
 
-> **Status:** Experimental — v0.1 core skill layer complete
+> **Status:** Experimental — v0.1 core & domain packs complete
 
 AgentLayer is a curated, agent-independent collection of engineering instructions and skills for AI coding agents such as Codex, OpenCode, Antigravity, Claude Code, Cursor, and compatible Agent Skills tools.
 
@@ -15,7 +15,7 @@ User Task
    ↓
 Engineering Instructions
    ↓
-Relevant Skills
+Relevant Skills (Core + Domain Packs)
    ↓
 Implementation
    ↓
@@ -42,15 +42,33 @@ Verification
 - ✓ `frontend-design` — Visual direction, aesthetic intentionality, high design quality.
 - ✓ `react-best-practices` — React & Next.js performance optimization (70 prioritized rules).
 
-### Architecture
+### Architecture & Database
 - ✓ `codebase-architecture` — TypeScript codebase design, domain-informed deepening, guardrails & wayfinding.
-
-### Database & Supabase
 - ✓ `supabase` — Supabase platform integration (Auth, SSR, Realtime, Storage, Functions).
 - ✓ `supabase-postgres-best-practices` — Postgres schema design, indexing, connection pooling, and RLS.
 
 ### Security
 - ✓ `security-review` — Data flow tracing, vulnerability scanning, secret detection, and CVE audits.
+
+### Geospatial Domain Pack
+- ✓ `gdal` — Raster/vector CLI recipes, reprojection, clipping, mosaics, tiling, and COGs.
+- ✓ `geopandas` — Vector operations, spatial joins, geometric overlays, CRS transforms, and spatial formats.
+- ✓ `geomaster` — Broad Earth observation, remote sensing, satellite processing, terrain, and spatial ML.
+- ✓ `design-postgis-tables` — PostGIS table architecture, geometry vs geography, spatial indexing, and bbox queries.
+- ✓ `geoparquet-validation` — GeoParquet metadata validation and cloud-native vector distribution.
+- ✓ `geozarr` — Cloud-native multidimensional geospatial raster/cube arrays and conventions.
+- ✓ `geospatial-frontend` — MapLibre GL, DuckDB-WASM, and geospatial visualization interfaces.
+- ✓ `geospatial-data-discovery` — Open geospatial data acquisition (STAC, OSM, Overture, Sentinel, Landsat, DEMs).
+
+### Data & Analytics Domain Pack
+- ✓ `exploratory-data-analysis` — Tabular profiling, missingness/leakage audits, outlier sensitivity, and EDA scaffolds.
+- ✓ `statistical-analysis` — Hypothesis testing, assumption diagnostics, effect sizes, power analysis, and APA reporting.
+- ✓ `scientific-visualization` — Publication-ready figures, colorblind-safe palettes, multi-panel layouts, and journal export.
+- ✓ `networkx` — Graph data structures, centrality, community detection, shortest paths, and network topology.
+
+### APIs & Open Data Domain Pack
+- ✓ `api-discovery` — Multi-category public/free API discovery, quota evaluation, and official-documentation verification.
+- ✓ `api-integration` — Resilient HTTP client engineering (exponential backoff, rate limits, schema validation, idempotency).
 
 ### AI Foundations
 - △ `ai-chat` — Research pending (placeholder retained).
@@ -62,9 +80,10 @@ Verification
 
 - **`instructions/`** — Universal, persistent engineering rules and principles (e.g., engineering discipline, simplicity, security baseline).
 - **`skills/`** — Modular, task-specific workflows following the open `SKILL.md` standard.
+- **`routing/`** — Domain routing maps and canonical multi-skill composition patterns (`DOMAIN_ROUTING.md`).
 - **`tests/`** — Behavioral test scenarios and upstream evaluation suites.
 - **`sources/`** — Registry of curated upstream sources, licensing, and attribution notes.
-- **`third_party/`** — Upstream MIT licenses and notices.
+- **`third_party/`** — Upstream MIT and Apache-2.0 licenses and notices.
 
 ---
 
