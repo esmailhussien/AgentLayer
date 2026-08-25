@@ -1,0 +1,76 @@
+{
+  "$schema": "./rules.schema.json",
+  "version": "1.0.0",
+  "weights": {
+    "technologyExactMatch": 5,
+    "capabilityMatch": 4,
+    "domainMatch": 3,
+    "strongTriggerMatch": 3,
+    "weakTriggerMatch": 1,
+    "recommendedBonus": 2,
+    "requiredDependency": 10,
+    "explicitInclusion": 20,
+    "explicitExclusion": -50,
+    "conflictPenalty": -50
+  },
+  "layerOrder": [
+    "process",
+    "domain",
+    "implementation",
+    "risk",
+    "verification"
+  ],
+  "thresholds": {
+    "selectionMinimumScore": 4,
+    "highConfidenceThreshold": 8
+  },
+  "intentRules": {
+    "buildNewFeature": {
+      "triggers": ["build", "create", "implement", "scaffold", "new feature", "from scratch", "develop"],
+      "injectProcess": ["brainstorming", "writing-plans"]
+    },
+    "debugging": {
+      "triggers": ["fix", "bug", "error", "broken", "debug", "crash", "intermittent", "failure", "fails", "failing", "exception", "401", "500", "timeout"],
+      "injectProcess": ["systematic-debugging"],
+      "suppressProcess": ["brainstorming"]
+    },
+    "architectureRefactoring": {
+      "triggers": ["architecture", "refactor architecture", "modularize", "system design", "domain boundaries"],
+      "injectSkills": ["codebase-architecture", "writing-plans"]
+    },
+    "trivialEdit": {
+      "triggers": ["button label", "typo", "color change", "text change", "rename variable", "minor fix"],
+      "suppressProcess": ["brainstorming", "writing-plans", "systematic-debugging"],
+      "suppressRisk": ["security-review"]
+    }
+  },
+  "riskBoundaries": {
+    "securityReview": {
+      "triggers": [
+        "auth", "login", "authentication", "authorization", "token", "jwt",
+        "secret", "api key", "password", "credential", "payment", "stripe",
+        "private data", "pii", "rls", "row level security", "vulnerability",
+        "injection", "sql injection", "xss", "csrf", "cve", "file upload",
+        "external api key", "bearer"
+      ],
+      "injectRisk": ["security-review"]
+    }
+  },
+  "verificationRules": {
+    "frontend": {
+      "triggers": ["frontend", "ui", "ux", "browser", "react", "maplibre", "component", "page", "dashboard"],
+      "injectVerification": ["browser-testing", "verification"]
+    },
+    "backendApiDb": {
+      "triggers": ["api", "database", "postgres", "supabase", "postgis", "backend", "endpoint", "webhook", "rest"],
+      "injectVerification": ["integration-testing", "verification"]
+    },
+    "algorithmMath": {
+      "triggers": ["algorithm", "function", "utility", "calculation", "statistic", "graph", "formula", "parser"],
+      "injectVerification": ["unit-testing", "verification"]
+    },
+    "generalDefault": {
+      "injectVerification": ["verification"]
+    }
+  }
+}
