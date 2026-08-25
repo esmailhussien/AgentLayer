@@ -1,0 +1,16 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Task specifications & workspace notes
+AgentLayer_*.md
+
+# Local environment & caches
+.env
+.env.local
+*.log
+__pycache__/
+*.py[cod]
+node_modules/
+dist/
+build/
