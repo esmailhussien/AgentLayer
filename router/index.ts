@@ -4,6 +4,9 @@ import { fileURLToPath } from "url";
 import type { RegistryData, CollectionsData, RoutingRules, RouteOptions, RouteResult, SkillLayer } from "./types.ts";
 import { resolveRoute } from "./resolve.ts";
 import { validateRegistry } from "./validate.ts";
+import { applySkills, bundleSkills, type ApplyResult } from "./apply.ts";
+
+export { applySkills, bundleSkills, type ApplyResult };
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -92,17 +95,25 @@ export function runCli(args = process.argv.slice(2)): void {
 
   if (args.length === 0 || args.includes("--help") || args.includes("-h")) {
     console.log(`
-AgentLayer Smart Router CLI
+AgentLayer Smart Router & Skills CLI
 
 Usage:
   node router/index.ts route "<task description>" [options]
+  node router/index.ts apply "<task description>" [options]
+  node router/index.ts bundle "<task description>" [options]
   npx agentlayer route "<task description>" [options]
 
 Commands:
   route "<prompt>"       Calculate optimal skill composition for a task
+  apply "<prompt>"       Calculate and copy selected skills to target (.agents/skills)
+  bundle "<prompt>"      Output concatenated markdown of instructions & selected skills
   validate               Verify skill registry integrity and disk paths
 
 Options:
+  --apply, -a            Install/copy selected skills to target directory
+  --target <dir>         Target directory for skills (default: .agents/skills)
+  --bundle, -b           Generate unified markdown prompt/context
+  --out <file>           Write bundled markdown output to file
   --dry-run              Display recommendation without modifying project
   --include <skill>      Force inclusion of a specific skill (can repeat)
   --exclude <skill>      Force exclusion of a specific skill (can repeat)
@@ -114,8 +125,9 @@ Options:
 
 Examples:
   node router/index.ts route "Build a React dashboard with weather map"
+  node router/index.ts apply "Build a React dashboard with weather map"
+  node router/index.ts bundle "Refactor codebase architecture" --out context.md
   node router/index.ts route "Fix Supabase auth 401 bug" --dry-run
-  node router/index.ts route "Process GeoTIFF into COG" --include gdal --exclude geomaster
 `);
     process.exit(0);
   }
@@ -137,7 +149,7 @@ Examples:
     }
   }
 
-  if (command === "route") {
+  if (command === "route" || command === "apply" || command === "bundle") {
     const prompt = args[1];
     if (!prompt || prompt.startsWith("--")) {
       console.error("Error: Please provide a task description string.");
@@ -151,10 +163,22 @@ Examples:
     };
 
     let format: "table" | "json" = "table";
+    let doApply = command === "apply";
+    let doBundle = command === "bundle";
+    let targetDir = ".agents/skills";
+    let outFile: string | undefined;
 
     for (let i = 2; i < args.length; i++) {
       if (args[i] === "--dry-run") {
         options.dryRun = true;
+      } else if (args[i] === "--apply" || args[i] === "-a") {
+        doApply = true;
+      } else if (args[i] === "--bundle" || args[i] === "-b") {
+        doBundle = true;
+      } else if (args[i] === "--target" && args[i + 1]) {
+        targetDir = args[++i];
+      } else if (args[i] === "--out" && args[i + 1]) {
+        outFile = args[++i];
       } else if (args[i] === "--include" && args[i + 1]) {
         options.include?.push(args[++i]);
       } else if (args[i] === "--exclude" && args[i + 1]) {
@@ -167,7 +191,34 @@ Examples:
     }
 
     const result = route(prompt, options);
+
+    if (doBundle) {
+      const bundle = bundleSkills(result, workspaceRoot, true);
+      if (outFile) {
+        fs.writeFileSync(path.resolve(process.cwd(), outFile), bundle, "utf-8");
+        console.log(`✓ Composed bundle written to: ${outFile} (${result.skills.length} skills, ${bundle.length} bytes)`);
+      } else {
+        console.log(bundle);
+      }
+      return;
+    }
+
     printRouteResult(result, format);
+
+    if (doApply && !options.dryRun) {
+      console.log(`Applying ${result.skills.length} skill(s) to '${targetDir}'...`);
+      const applyRes = applySkills(result, targetDir, process.cwd(), workspaceRoot);
+      if (applyRes.errors.length > 0) {
+        console.error(`⚠️  Some skills had errors during install:`);
+        for (const err of applyRes.errors) {
+          console.error(`  - ${err}`);
+        }
+      }
+      console.log(`✓ Successfully installed ${applyRes.appliedSkills.length} skill(s) to '${applyRes.targetDir}'.`);
+      if (applyRes.instructionsCopied) {
+        console.log(`✓ Installed universal engineering instructions to '${path.join(path.dirname(applyRes.targetDir), "instructions")}'.`);
+      }
+    }
   }
 }
 
