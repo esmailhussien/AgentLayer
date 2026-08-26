@@ -69,6 +69,18 @@
         "integration-testing",
         "verification"
       ]
+    },
+    "ai-app": {
+      "name": "ai-app",
+      "description": "AI-powered application with streaming, structured output, and tool calling",
+      "base": [
+        "brainstorming",
+        "writing-plans",
+        "ai-sdk",
+        "security-review",
+        "integration-testing",
+        "verification"
+      ]
     }
   }
 }

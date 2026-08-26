@@ -88,12 +88,19 @@ export interface RouteOptions {
   minScore?: number;
 }
 
+export interface DroppedSkill {
+  skill: string;
+  reason: string;
+}
+
 export interface RouteResult {
   prompt: string;
   classification: TaskClassification;
   skills: SelectedSkill[];
   skillsByLayer: Record<SkillLayer, SelectedSkill[]>;
+  dropped: DroppedSkill[];
   confidence: number;
   dryRun: boolean;
+  warning?: string;
   summary: string;
 }

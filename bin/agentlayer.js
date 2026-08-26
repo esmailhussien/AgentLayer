@@ -1,2 +1,4 @@
 #!/usr/bin/env node
-import "../router/index.ts";
+import { runCli } from "../router/index.ts";
+
+runCli();

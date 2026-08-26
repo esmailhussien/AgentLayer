@@ -55,6 +55,8 @@ export function generateSkillExplanation(
       return "Discovers and verifies public/free API endpoints against official documentation.";
     case "api-integration":
       return "Implements resilient HTTP client with exponential backoff, rate limits, and schema validation.";
+    case "ai-sdk":
+      return "Builds AI-powered applications with streaming, structured output, tool loops, and multi-provider models.";
     case "security-review":
       return "Audits authentication, secrets, RLS boundaries, and external data flow for security risks.";
     case "unit-testing":

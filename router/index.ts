@@ -47,6 +47,10 @@ export function printRouteResult(result: RouteResult, format: "table" | "json" =
   }
   console.log("--------------------------------------------------------------------------------");
 
+  if (result.warning) {
+    console.log(`\n⚠️  ${result.warning}`);
+  }
+
   const layerLabels: Record<SkillLayer, string> = {
     process: "1. Process & Planning",
     domain: "2. Domain Knowledge",
@@ -68,19 +72,23 @@ export function printRouteResult(result: RouteResult, format: "table" | "json" =
     }
   }
 
+  if (result.dryRun && result.dropped && result.dropped.length > 0) {
+    console.log("\n[ Diagnostic: Dropped / Suppressed Candidates ]");
+    for (const d of result.dropped.slice(0, 8)) {
+      console.log(`  - ${d.skill.padEnd(30)}: ${d.reason}`);
+    }
+  }
+
   console.log("\n================================================================================\n");
 }
 
-// CLI execution handling
-if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(__filename)) {
-  const args = process.argv.slice(2);
-
+export function runCli(args = process.argv.slice(2)): void {
   if (args.length === 0 || args.includes("--help") || args.includes("-h")) {
     console.log(`
 AgentLayer Smart Router CLI
 
 Usage:
-  node router/index.js route "<task description>" [options]
+  node router/index.ts route "<task description>" [options]
   npx agentlayer route "<task description>" [options]
 
 Commands:
@@ -97,9 +105,9 @@ Options:
   --help, -h             Show this help message
 
 Examples:
-  node router/index.js route "Build a React dashboard with weather map"
-  node router/index.js route "Fix Supabase auth 401 bug" --dry-run
-  node router/index.js route "Process GeoTIFF into COG" --include gdal --exclude geomaster
+  node router/index.ts route "Build a React dashboard with weather map"
+  node router/index.ts route "Fix Supabase auth 401 bug" --dry-run
+  node router/index.ts route "Process GeoTIFF into COG" --include gdal --exclude geomaster
 `);
     process.exit(0);
   }
@@ -153,4 +161,9 @@ Examples:
     const result = route(prompt, options);
     printRouteResult(result, format);
   }
+}
+
+// CLI auto-run when invoked directly
+if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(__filename)) {
+  runCli();
 }

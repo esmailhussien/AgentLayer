@@ -41,7 +41,7 @@
       "layer": "domain",
       "domains": ["architecture", "backend", "frontend"],
       "capabilities": ["system-design", "domain-boundaries", "refactoring-architecture"],
-      "triggers": ["architecture", "codebase structure", "domain boundaries", "restructure", "deepening", "modularization"],
+      "triggers": ["architecture", "codebase structure", "domain boundaries", "restructure", "deepening", "modularization", "decoupled modules", "refactor monolithic", "refactor architecture"],
       "recommended": ["writing-plans", "verification"],
       "requires": [],
       "conflicts": []
@@ -52,7 +52,7 @@
       "layer": "implementation",
       "domains": ["frontend", "design"],
       "capabilities": ["ui-design", "visual-hierarchy", "typography", "styling", "design-tokens"],
-      "triggers": ["frontend", "ui", "ux", "design", "style", "css", "layout", "aesthetic", "theme", "dark mode", "responsive"],
+      "triggers": ["frontend", "ui", "ux", "design", "style", "css", "layout", "aesthetic", "theme", "dark mode", "responsive", "dashboard"],
       "recommended": ["react-best-practices"],
       "requires": [],
       "conflicts": []
@@ -239,7 +239,7 @@
       "layer": "implementation",
       "domains": ["api", "backend"],
       "capabilities": ["http-client", "exponential-backoff", "rate-limiting", "schema-validation", "idempotency"],
-      "triggers": ["integrate api", "api client", "rest api", "fetch wrapper", "http client", "rate limit", "exponential backoff", "webhook", "openapi"],
+      "triggers": ["integrate api", "api client", "rest api", "fetch wrapper", "http client", "rate limit", "exponential backoff", "webhook", "openapi", "api as a tool", "uses a weather api", "weather api as a tool", "external api", "external weather api"],
       "recommended": ["integration-testing", "security-review"],
       "requires": [],
       "conflicts": []
@@ -296,6 +296,17 @@
       "capabilities": ["tdd-cycle", "red-green-refactor", "test-first"],
       "triggers": ["tdd", "test driven development", "red green refactor", "write test first"],
       "recommended": ["unit-testing", "verification"],
+      "requires": [],
+      "conflicts": []
+    },
+    "ai-sdk": {
+      "name": "ai-sdk",
+      "path": "skills/ai-sdk",
+      "layer": "implementation",
+      "domains": ["ai", "frontend", "backend"],
+      "capabilities": ["chat", "streaming", "structured-output", "tool-calling", "rag", "embeddings", "ai-ui", "ai-agents"],
+      "triggers": ["ai", "ai sdk", "vercel ai", "llm", "chatbot", "chat completions", "streaming ai", "structured output", "tool calling", "rag", "embeddings", "vector search", "generatetext", "streamtext", "usechat", "ai assistant"],
+      "recommended": ["verification"],
       "requires": [],
       "conflicts": []
     },
