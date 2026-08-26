@@ -22,7 +22,7 @@ This document describes the recommended skill composition and execution pipeline
 ```text
 User Task: "Analyze customer churn CSV and test demographic significance"
 
-1. instructions/engineering-discipline.md
+1. instructions/engineering.md
 2. skills/exploratory-data-analysis
    → Profile distributions, missing values, anomaly detection
 3. skills/statistical-analysis

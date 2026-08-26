@@ -1,10 +1,10 @@
-# Upstream Attribution
+﻿# Upstream Attribution
 
 This skill is derived from the `geospatial-frontend` skill in `isaaccorley/geospatial-skills`.
 
 - **Upstream repository:** https://github.com/isaaccorley/geospatial-skills
 - **Upstream path:** `skills/geospatial-frontend/`
-- **License:** Apache-2.0 (see [third_party/isaaccorley-geospatial-skills/LICENSE](file:///d:/AgentLayer/third_party/isaaccorley-geospatial-skills/LICENSE))
+- **License:** Apache-2.0 (see [third_party/isaaccorley-geospatial-skills/LICENSE](../../third_party/isaaccorley-geospatial-skills/LICENSE))
 - **Imported commit:** `a203446cb997cd1dbf054918b1021a6040b69824`
 - **Import date:** 2026-08-25
 - **Local path:** `skills/geospatial-frontend/`

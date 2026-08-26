@@ -11,16 +11,35 @@ Instead of relying on one large, unwieldy system prompt, AgentLayer provides foc
 ## Core Idea
 
 ```text
-User Task
+User Task Description
    ↓
-Engineering Instructions
+Smart Skill Router (Deterministic CLI / Library)
    ↓
-Relevant Skills (Core + Domain Packs)
+Precise Minimal Skill Set (Process + Domain + Implementation + Risk + Verification)
    ↓
 Implementation
    ↓
-Verification
+Verification Before Completion
 ```
+
+---
+
+## Smart Skill Router
+
+AgentLayer includes a deterministic, offline smart router that resolves natural-language user tasks into the smallest useful set of skills with human-readable rationales:
+
+```bash
+# Calculate recommended skill composition
+npx agentlayer route "Build a React dashboard displaying live weather data on an interactive map"
+
+# Dry run inspection
+npx agentlayer route "Fix Supabase auth 401 bug" --dry-run
+
+# Run full router test suite
+npm run test:router
+```
+
+For full details on scoring weights, layers, and heuristics, see [`routing/ROUTER_DESIGN.md`](routing/ROUTER_DESIGN.md) and [`router/README.md`](router/README.md).
 
 ---
 

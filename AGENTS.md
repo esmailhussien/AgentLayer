@@ -16,3 +16,15 @@ These guidelines apply to AI coding agents modifying or extending the AgentLayer
 8. **Verify Before Completion**: Verify all changes, file paths, and syntax before declaring work complete.
 9. **No False Claims**: Never claim tests or verification passed unless they were genuinely executed and verified.
 10. **Preserve Attribution & Licensing**: Always maintain upstream licensing information, references, and attribution for any adapted material in `sources/SOURCES.md`.
+
+---
+
+## Smart Router Guidelines
+
+11. **Test-Backed Routing Rules**: Never add a routing rule or trigger without a corresponding test scenario in `tests/router/scenarios.json`.
+12. **Register Only Real Skills**: Never register nonexistent skills or placeholders as production-ready in `routing/registry.json`.
+13. **Precise Triggers Over Broad Keywords**: Prefer specific technology and capability triggers over generic terms that cause over-selection.
+14. **Avoid Domain Over-Selection**: Do not route every domain task to every domain skill; select only the minimal, highest-confidence tools.
+15. **Concrete Reasons for Dependencies**: Hard dependencies (`requires`) and recommendations (`recommended`) must have explicit, documented rationales.
+16. **Deterministic Execution**: The router must produce the identical skill composition and ordering for identical inputs across all runs.
+17. **Regression Testing for Routing**: Any modification to scoring, classification, or registry metadata must pass the entire `npm run test:router` suite with 100% scenario accuracy.

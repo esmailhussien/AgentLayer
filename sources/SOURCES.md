@@ -1,4 +1,4 @@
-# Curated Sources & Attribution Registry
+﻿# Curated Sources & Attribution Registry
 
 This file tracks upstream repositories, specifications, and references evaluated during the curation of AgentLayer.
 
@@ -33,13 +33,13 @@ This file tracks upstream repositories, specifications, and references evaluated
 
 - **Source Repository:** `https://github.com/obra/superpowers`
 - **Upstream Path:** `skills/systematic-debugging/`
-- **License:** MIT (see [third_party/superpowers/LICENSE](file:///d:/AgentLayer/third_party/superpowers/LICENSE))
+- **License:** MIT (see [third_party/superpowers/LICENSE](../third_party/superpowers/LICENSE))
 - **Imported Commit SHA:** `b36e0829c6d0140e93cfef2ca599b1b07d4a7797`
 - **Import Date:** 2026-08-24
 - **Local AgentLayer Paths:**
-  - Production Skill: [skills/systematic-debugging/](file:///d:/AgentLayer/skills/systematic-debugging/) (`SKILL.md`, `condition-based-waiting.md`, `condition-based-waiting-example.ts`, `defense-in-depth.md`, `find-polluter.sh`, `root-cause-tracing.md`, `UPSTREAM.md`)
-  - Test Scenarios: [tests/upstream/superpowers/systematic-debugging/](file:///d:/AgentLayer/tests/upstream/superpowers/systematic-debugging/) (`test-academic.md`, `test-pressure-1.md`, `test-pressure-2.md`, `test-pressure-3.md`, `README.md`)
-  - License/Notice: [third_party/superpowers/](file:///d:/AgentLayer/third_party/superpowers/) (`LICENSE`, `NOTICE.md`)
+  - Production Skill: [skills/systematic-debugging/](../skills/systematic-debugging/) (`SKILL.md`, `condition-based-waiting.md`, `condition-based-waiting-example.ts`, `defense-in-depth.md`, `find-polluter.sh`, `root-cause-tracing.md`, `UPSTREAM.md`)
+  - Test Scenarios: [tests/upstream/superpowers/systematic-debugging/](../tests/upstream/superpowers/systematic-debugging/) (`test-academic.md`, `test-pressure-1.md`, `test-pressure-2.md`, `test-pressure-3.md`, `README.md`)
+  - License/Notice: [third_party/superpowers/](../third_party/superpowers/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:**
   - Implementation files: Unchanged (faithful vendoring).
   - Test files: Updated skill reference path to AgentLayer directory structure (`skills/systematic-debugging`).
@@ -48,12 +48,12 @@ This file tracks upstream repositories, specifications, and references evaluated
 
 - **Source Repository:** `https://github.com/obra/superpowers`
 - **Upstream Path:** `skills/verification-before-completion/`
-- **License:** MIT (see [third_party/superpowers/LICENSE](file:///d:/AgentLayer/third_party/superpowers/LICENSE))
+- **License:** MIT (see [third_party/superpowers/LICENSE](../third_party/superpowers/LICENSE))
 - **Imported Commit SHA:** `b36e0829c6d0140e93cfef2ca599b1b07d4a7797`
 - **Import Date:** 2026-08-24
 - **Local AgentLayer Paths:**
-  - Production Skill: [skills/verification/](file:///d:/AgentLayer/skills/verification/) (`SKILL.md`, `UPSTREAM.md`)
-  - License/Notice: [third_party/superpowers/](file:///d:/AgentLayer/third_party/superpowers/) (`LICENSE`, `NOTICE.md`)
+  - Production Skill: [skills/verification/](../skills/verification/) (`SKILL.md`, `UPSTREAM.md`)
+  - License/Notice: [third_party/superpowers/](../third_party/superpowers/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:**
   - Implementation file: Unchanged (byte-for-byte faithful vendoring).
   - Note: Local directory is `skills/verification/`, upstream skill name is `verification-before-completion`.
@@ -62,13 +62,13 @@ This file tracks upstream repositories, specifications, and references evaluated
 
 - **Source Repository:** `https://github.com/obra/superpowers`
 - **Upstream Path:** `skills/brainstorming/`
-- **License:** MIT (see [third_party/superpowers/LICENSE](file:///d:/AgentLayer/third_party/superpowers/LICENSE))
+- **License:** MIT (see [third_party/superpowers/LICENSE](../third_party/superpowers/LICENSE))
 - **Imported Commit SHA:** `b36e0829c6d0140e93cfef2ca599b1b07d4a7797`
 - **Import Date:** 2026-08-24
 - **Local AgentLayer Paths:**
-  - Production Skill: [skills/brainstorming/](file:///d:/AgentLayer/skills/brainstorming/) (`SKILL.md`, `visual-companion.md`, `spec-document-reviewer-prompt.md`, `scripts/`, `UPSTREAM.md`)
-  - Test Suites: [tests/upstream/superpowers/brainstorming/](file:///d:/AgentLayer/tests/upstream/superpowers/brainstorming/) (`brainstorm-server/`, `README.md`)
-  - License/Notice: [third_party/superpowers/](file:///d:/AgentLayer/third_party/superpowers/) (`LICENSE`, `NOTICE.md`)
+  - Production Skill: [skills/brainstorming/](../skills/brainstorming/) (`SKILL.md`, `visual-companion.md`, `spec-document-reviewer-prompt.md`, `scripts/`, `UPSTREAM.md`)
+  - Test Suites: [tests/upstream/superpowers/brainstorming/](../tests/upstream/superpowers/brainstorming/) (`brainstorm-server/`, `README.md`)
+  - License/Notice: [third_party/superpowers/](../third_party/superpowers/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:**
   - Implementation files: Unchanged (faithful vendoring).
   - Test files: Unchanged (vendored from upstream `tests/brainstorm-server/`).
@@ -77,12 +77,12 @@ This file tracks upstream repositories, specifications, and references evaluated
 
 - **Source Repository:** `https://github.com/obra/superpowers`
 - **Upstream Path:** `skills/writing-plans/`
-- **License:** MIT (see [third_party/superpowers/LICENSE](file:///d:/AgentLayer/third_party/superpowers/LICENSE))
+- **License:** MIT (see [third_party/superpowers/LICENSE](../third_party/superpowers/LICENSE))
 - **Imported Commit SHA:** `b36e0829c6d0140e93cfef2ca599b1b07d4a7797`
 - **Import Date:** 2026-08-24
 - **Local AgentLayer Paths:**
-  - Production Skill: [skills/writing-plans/](file:///d:/AgentLayer/skills/writing-plans/) (`SKILL.md`, `plan-document-reviewer-prompt.md`, `UPSTREAM.md`)
-  - License/Notice: [third_party/superpowers/](file:///d:/AgentLayer/third_party/superpowers/) (`LICENSE`, `NOTICE.md`)
+  - Production Skill: [skills/writing-plans/](../skills/writing-plans/) (`SKILL.md`, `plan-document-reviewer-prompt.md`, `UPSTREAM.md`)
+  - License/Notice: [third_party/superpowers/](../third_party/superpowers/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:**
   - Implementation files: Unchanged (faithful vendoring).
 
@@ -90,13 +90,13 @@ This file tracks upstream repositories, specifications, and references evaluated
 
 - **Source Repository:** `https://github.com/arjunprabhulal/agent-skills`
 - **Upstream Path:** `skills/qa/unit-testing/`
-- **License:** MIT (see [third_party/arjunprabhulal-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/arjunprabhulal-agent-skills/LICENSE))
+- **License:** MIT (see [third_party/arjunprabhulal-agent-skills/LICENSE](../third_party/arjunprabhulal-agent-skills/LICENSE))
 - **Imported Commit SHA:** `42dd24080fce6d731d00e2a1134f398c3da4171b`
 - **Import Date:** 2026-08-24
 - **Local AgentLayer Paths:**
-  - Production Skill: [skills/unit-testing/](file:///d:/AgentLayer/skills/unit-testing/) (`SKILL.md`, `UPSTREAM.md`)
-  - Upstream Evals: [tests/upstream/arjunprabhulal-agent-skills/unit-testing/](file:///d:/AgentLayer/tests/upstream/arjunprabhulal-agent-skills/unit-testing/) (`unit-testing.json`, `README.md`)
-  - License/Notice: [third_party/arjunprabhulal-agent-skills/](file:///d:/AgentLayer/third_party/arjunprabhulal-agent-skills/) (`LICENSE`, `NOTICE.md`)
+  - Production Skill: [skills/unit-testing/](../skills/unit-testing/) (`SKILL.md`, `UPSTREAM.md`)
+  - Upstream Evals: [tests/upstream/arjunprabhulal-agent-skills/unit-testing/](../tests/upstream/arjunprabhulal-agent-skills/unit-testing/) (`unit-testing.json`, `README.md`)
+  - License/Notice: [third_party/arjunprabhulal-agent-skills/](../third_party/arjunprabhulal-agent-skills/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:**
   - Implementation files: Unchanged (byte-for-byte faithful vendoring).
 
@@ -104,13 +104,13 @@ This file tracks upstream repositories, specifications, and references evaluated
 
 - **Source Repository:** `https://github.com/arjunprabhulal/agent-skills`
 - **Upstream Path:** `skills/qa/integration-testing/`
-- **License:** MIT (see [third_party/arjunprabhulal-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/arjunprabhulal-agent-skills/LICENSE))
+- **License:** MIT (see [third_party/arjunprabhulal-agent-skills/LICENSE](../third_party/arjunprabhulal-agent-skills/LICENSE))
 - **Imported Commit SHA:** `42dd24080fce6d731d00e2a1134f398c3da4171b`
 - **Import Date:** 2026-08-24
 - **Local AgentLayer Paths:**
-  - Production Skill: [skills/integration-testing/](file:///d:/AgentLayer/skills/integration-testing/) (`SKILL.md`, `UPSTREAM.md`)
-  - Upstream Evals: [tests/upstream/arjunprabhulal-agent-skills/integration-testing/](file:///d:/AgentLayer/tests/upstream/arjunprabhulal-agent-skills/integration-testing/) (`integration-testing.json`, `README.md`)
-  - License/Notice: [third_party/arjunprabhulal-agent-skills/](file:///d:/AgentLayer/third_party/arjunprabhulal-agent-skills/) (`LICENSE`, `NOTICE.md`)
+  - Production Skill: [skills/integration-testing/](../skills/integration-testing/) (`SKILL.md`, `UPSTREAM.md`)
+  - Upstream Evals: [tests/upstream/arjunprabhulal-agent-skills/integration-testing/](../tests/upstream/arjunprabhulal-agent-skills/integration-testing/) (`integration-testing.json`, `README.md`)
+  - License/Notice: [third_party/arjunprabhulal-agent-skills/](../third_party/arjunprabhulal-agent-skills/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:**
   - Implementation files: Unchanged (byte-for-byte faithful vendoring).
 
@@ -118,13 +118,13 @@ This file tracks upstream repositories, specifications, and references evaluated
 
 - **Source Repository:** `https://github.com/arjunprabhulal/agent-skills`
 - **Upstream Path:** `skills/qa/browser-testing/`
-- **License:** MIT (see [third_party/arjunprabhulal-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/arjunprabhulal-agent-skills/LICENSE))
+- **License:** MIT (see [third_party/arjunprabhulal-agent-skills/LICENSE](../third_party/arjunprabhulal-agent-skills/LICENSE))
 - **Imported Commit SHA:** `42dd24080fce6d731d00e2a1134f398c3da4171b`
 - **Import Date:** 2026-08-24
 - **Local AgentLayer Paths:**
-  - Production Skill: [skills/browser-testing/](file:///d:/AgentLayer/skills/browser-testing/) (`SKILL.md`, `UPSTREAM.md`)
-  - Upstream Evals: [tests/upstream/arjunprabhulal-agent-skills/browser-testing/](file:///d:/AgentLayer/tests/upstream/arjunprabhulal-agent-skills/browser-testing/) (`browser-testing.json`, `README.md`)
-  - License/Notice: [third_party/arjunprabhulal-agent-skills/](file:///d:/AgentLayer/third_party/arjunprabhulal-agent-skills/) (`LICENSE`, `NOTICE.md`)
+  - Production Skill: [skills/browser-testing/](../skills/browser-testing/) (`SKILL.md`, `UPSTREAM.md`)
+  - Upstream Evals: [tests/upstream/arjunprabhulal-agent-skills/browser-testing/](../tests/upstream/arjunprabhulal-agent-skills/browser-testing/) (`browser-testing.json`, `README.md`)
+  - License/Notice: [third_party/arjunprabhulal-agent-skills/](../third_party/arjunprabhulal-agent-skills/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:**
   - Implementation files: Unchanged (byte-for-byte faithful vendoring).
 
@@ -132,13 +132,13 @@ This file tracks upstream repositories, specifications, and references evaluated
 
 - **Source Repository:** `https://github.com/arjunprabhulal/agent-skills`
 - **Upstream Path:** `skills/qa/test-driven-development/`
-- **License:** MIT (see [third_party/arjunprabhulal-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/arjunprabhulal-agent-skills/LICENSE))
+- **License:** MIT (see [third_party/arjunprabhulal-agent-skills/LICENSE](../third_party/arjunprabhulal-agent-skills/LICENSE))
 - **Imported Commit SHA:** `42dd24080fce6d731d00e2a1134f398c3da4171b`
 - **Import Date:** 2026-08-24
 - **Local AgentLayer Paths:**
-  - Production Skill: [skills/test-driven-development/](file:///d:/AgentLayer/skills/test-driven-development/) (`SKILL.md`, `UPSTREAM.md`)
-  - Upstream Evals: [tests/upstream/arjunprabhulal-agent-skills/test-driven-development/](file:///d:/AgentLayer/tests/upstream/arjunprabhulal-agent-skills/test-driven-development/) (`test-driven-development.json`, `README.md`)
-  - License/Notice: [third_party/arjunprabhulal-agent-skills/](file:///d:/AgentLayer/third_party/arjunprabhulal-agent-skills/) (`LICENSE`, `NOTICE.md`)
+  - Production Skill: [skills/test-driven-development/](../skills/test-driven-development/) (`SKILL.md`, `UPSTREAM.md`)
+  - Upstream Evals: [tests/upstream/arjunprabhulal-agent-skills/test-driven-development/](../tests/upstream/arjunprabhulal-agent-skills/test-driven-development/) (`test-driven-development.json`, `README.md`)
+  - License/Notice: [third_party/arjunprabhulal-agent-skills/](../third_party/arjunprabhulal-agent-skills/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:**
   - Implementation files: Unchanged (byte-for-byte faithful vendoring).
 
@@ -146,12 +146,12 @@ This file tracks upstream repositories, specifications, and references evaluated
 
 - **Source Repository:** `https://github.com/vercel-labs/open-agents`
 - **Upstream Path:** `.agents/skills/frontend-design/`
-- **License:** MIT (see [third_party/vercel-open-agents/LICENSE](file:///d:/AgentLayer/third_party/vercel-open-agents/LICENSE))
+- **License:** MIT (see [third_party/vercel-open-agents/LICENSE](../third_party/vercel-open-agents/LICENSE))
 - **Imported Commit SHA:** `cf865e94de7729751c747171785b6ce57e7b178c`
 - **Import Date:** 2026-08-24
 - **Local AgentLayer Paths:**
-  - Production Skill: [skills/frontend-design/](file:///d:/AgentLayer/skills/frontend-design/) (`SKILL.md`, `UPSTREAM.md`)
-  - License/Notice: [third_party/vercel-open-agents/](file:///d:/AgentLayer/third_party/vercel-open-agents/) (`LICENSE`, `NOTICE.md`)
+  - Production Skill: [skills/frontend-design/](../skills/frontend-design/) (`SKILL.md`, `UPSTREAM.md`)
+  - License/Notice: [third_party/vercel-open-agents/](../third_party/vercel-open-agents/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:**
   - Implementation files: Unchanged (byte-for-byte faithful vendoring).
   - Behavioral modifications: None on initial import.
@@ -160,13 +160,13 @@ This file tracks upstream repositories, specifications, and references evaluated
 
 - **Source Repository:** `https://github.com/vercel-labs/agent-skills`
 - **Upstream Path:** `skills/react-best-practices/`
-- **License:** MIT (see [third_party/vercel-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/vercel-agent-skills/LICENSE))
+- **License:** MIT (see [third_party/vercel-agent-skills/LICENSE](../third_party/vercel-agent-skills/LICENSE))
 - **Imported Commit SHA:** `dd089a8c752c966dee8bf0f27cb625ba193ffd9e`
 - **Import Date:** 2026-08-24
 - **Local AgentLayer Paths:**
-  - Production Skill: [skills/react-best-practices/](file:///d:/AgentLayer/skills/react-best-practices/) (`SKILL.md`, `AGENTS.md`, `metadata.json`, `README.md`, `rules/`, `UPSTREAM.md`)
-  - Upstream Evals: [tests/upstream/vercel/react-best-practices/](file:///d:/AgentLayer/tests/upstream/vercel/react-best-practices/) (`test-cases.json`, `README.md`)
-  - License/Notice: [third_party/vercel-agent-skills/](file:///d:/AgentLayer/third_party/vercel-agent-skills/) (`LICENSE`, `NOTICE.md`)
+  - Production Skill: [skills/react-best-practices/](../skills/react-best-practices/) (`SKILL.md`, `AGENTS.md`, `metadata.json`, `README.md`, `rules/`, `UPSTREAM.md`)
+  - Upstream Evals: [tests/upstream/vercel/react-best-practices/](../tests/upstream/vercel/react-best-practices/) (`test-cases.json`, `README.md`)
+  - License/Notice: [third_party/vercel-agent-skills/](../third_party/vercel-agent-skills/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:**
   - Implementation files: Unchanged (faithful vendoring).
   - Behavioral modifications: None on initial import.
@@ -175,12 +175,12 @@ This file tracks upstream repositories, specifications, and references evaluated
 
 - **Source Repository:** `https://github.com/mblode/agent-skills`
 - **Upstream Path:** `skills/codebase-architecture/`
-- **License:** MIT (see [third_party/mblode-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/mblode-agent-skills/LICENSE))
+- **License:** MIT (see [third_party/mblode-agent-skills/LICENSE](../third_party/mblode-agent-skills/LICENSE))
 - **Imported Commit SHA:** `e97a3b383f5944f90d41eb92b24b4fb3b917a7f9`
 - **Import Date:** 2026-08-24
 - **Local AgentLayer Paths:**
-  - Production Skill: [skills/codebase-architecture/](file:///d:/AgentLayer/skills/codebase-architecture/) (`SKILL.md`, `references/`, `UPSTREAM.md`)
-  - License/Notice: [third_party/mblode-agent-skills/](file:///d:/AgentLayer/third_party/mblode-agent-skills/) (`LICENSE`, `NOTICE.md`)
+  - Production Skill: [skills/codebase-architecture/](../skills/codebase-architecture/) (`SKILL.md`, `references/`, `UPSTREAM.md`)
+  - License/Notice: [third_party/mblode-agent-skills/](../third_party/mblode-agent-skills/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:**
   - Implementation files: Unchanged (byte-for-byte faithful vendoring).
   - Behavioral modifications: None on initial import.
@@ -189,12 +189,12 @@ This file tracks upstream repositories, specifications, and references evaluated
 
 - **Source Repository:** `https://github.com/supabase/agent-skills`
 - **Upstream Path:** `skills/supabase/`
-- **License:** MIT (see [third_party/supabase-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/supabase-agent-skills/LICENSE))
+- **License:** MIT (see [third_party/supabase-agent-skills/LICENSE](../third_party/supabase-agent-skills/LICENSE))
 - **Imported Commit SHA:** `8331f910845103c08d51f6ca1d86ebb7d1f745e3`
 - **Import Date:** 2026-08-24
 - **Local AgentLayer Paths:**
-  - Production Skill: [skills/supabase/](file:///d:/AgentLayer/skills/supabase/) (`SKILL.md`, `CHANGELOG.md`, `assets/`, `references/`, `UPSTREAM.md`)
-  - License/Notice: [third_party/supabase-agent-skills/](file:///d:/AgentLayer/third_party/supabase-agent-skills/) (`LICENSE`, `NOTICE.md`)
+  - Production Skill: [skills/supabase/](../skills/supabase/) (`SKILL.md`, `CHANGELOG.md`, `assets/`, `references/`, `UPSTREAM.md`)
+  - License/Notice: [third_party/supabase-agent-skills/](../third_party/supabase-agent-skills/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:**
   - Implementation files: Unchanged (byte-for-byte faithful vendoring).
   - Behavioral modifications: None on initial import.
@@ -203,12 +203,12 @@ This file tracks upstream repositories, specifications, and references evaluated
 
 - **Source Repository:** `https://github.com/supabase/agent-skills`
 - **Upstream Path:** `skills/supabase-postgres-best-practices/`
-- **License:** MIT (see [third_party/supabase-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/supabase-agent-skills/LICENSE))
+- **License:** MIT (see [third_party/supabase-agent-skills/LICENSE](../third_party/supabase-agent-skills/LICENSE))
 - **Imported Commit SHA:** `8331f910845103c08d51f6ca1d86ebb7d1f745e3`
 - **Import Date:** 2026-08-24
 - **Local AgentLayer Paths:**
-  - Production Skill: [skills/supabase-postgres-best-practices/](file:///d:/AgentLayer/skills/supabase-postgres-best-practices/) (`SKILL.md`, `CHANGELOG.md`, `references/`, `UPSTREAM.md`)
-  - License/Notice: [third_party/supabase-agent-skills/](file:///d:/AgentLayer/third_party/supabase-agent-skills/) (`LICENSE`, `NOTICE.md`)
+  - Production Skill: [skills/supabase-postgres-best-practices/](../skills/supabase-postgres-best-practices/) (`SKILL.md`, `CHANGELOG.md`, `references/`, `UPSTREAM.md`)
+  - License/Notice: [third_party/supabase-agent-skills/](../third_party/supabase-agent-skills/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:**
   - Implementation files: Unchanged (byte-for-byte faithful vendoring).
   - Behavioral modifications: None on initial import.
@@ -217,12 +217,12 @@ This file tracks upstream repositories, specifications, and references evaluated
 
 - **Source Repository:** `https://github.com/github/awesome-copilot`
 - **Upstream Path:** `skills/security-review/`
-- **License:** MIT (see [third_party/github-awesome-copilot/LICENSE](file:///d:/AgentLayer/third_party/github-awesome-copilot/LICENSE))
+- **License:** MIT (see [third_party/github-awesome-copilot/LICENSE](../third_party/github-awesome-copilot/LICENSE))
 - **Imported Commit SHA:** `8e03e6abebad103ad0b27fe66d8ec368264a7a22`
 - **Import Date:** 2026-08-24
 - **Local AgentLayer Paths:**
-  - Production Skill: [skills/security-review/](file:///d:/AgentLayer/skills/security-review/) (`SKILL.md`, `references/`, `UPSTREAM.md`)
-  - License/Notice: [third_party/github-awesome-copilot/](file:///d:/AgentLayer/third_party/github-awesome-copilot/) (`LICENSE`, `NOTICE.md`)
+  - Production Skill: [skills/security-review/](../skills/security-review/) (`SKILL.md`, `references/`, `UPSTREAM.md`)
+  - License/Notice: [third_party/github-awesome-copilot/](../third_party/github-awesome-copilot/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:**
   - Implementation files: Unchanged (byte-for-byte faithful vendoring).
   - Behavioral modifications: None on initial import.
@@ -231,157 +231,157 @@ This file tracks upstream repositories, specifications, and references evaluated
 
 - **Source Repository:** `https://github.com/isaaccorley/geospatial-skills`
 - **Upstream Path:** `skills/gdal/`
-- **License:** Apache-2.0 (see [third_party/isaaccorley-geospatial-skills/LICENSE](file:///d:/AgentLayer/third_party/isaaccorley-geospatial-skills/LICENSE))
+- **License:** Apache-2.0 (see [third_party/isaaccorley-geospatial-skills/LICENSE](../third_party/isaaccorley-geospatial-skills/LICENSE))
 - **Imported Commit SHA:** `a203446cb997cd1dbf054918b1021a6040b69824`
 - **Import Date:** 2026-08-25
 - **Local AgentLayer Paths:**
-  - Production Skill: [skills/gdal/](file:///d:/AgentLayer/skills/gdal/) (`SKILL.md`, `references/`, `UPSTREAM.md`)
-  - License/Notice: [third_party/isaaccorley-geospatial-skills/](file:///d:/AgentLayer/third_party/isaaccorley-geospatial-skills/) (`LICENSE`, `NOTICE.md`)
+  - Production Skill: [skills/gdal/](../skills/gdal/) (`SKILL.md`, `references/`, `UPSTREAM.md`)
+  - License/Notice: [third_party/isaaccorley-geospatial-skills/](../third_party/isaaccorley-geospatial-skills/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:** Unchanged (byte-for-byte faithful vendoring).
 
 ### geoparquet-validation
 
 - **Source Repository:** `https://github.com/isaaccorley/geospatial-skills`
 - **Upstream Path:** `skills/geoparquet-validation/`
-- **License:** Apache-2.0 (see [third_party/isaaccorley-geospatial-skills/LICENSE](file:///d:/AgentLayer/third_party/isaaccorley-geospatial-skills/LICENSE))
+- **License:** Apache-2.0 (see [third_party/isaaccorley-geospatial-skills/LICENSE](../third_party/isaaccorley-geospatial-skills/LICENSE))
 - **Imported Commit SHA:** `a203446cb997cd1dbf054918b1021a6040b69824`
 - **Import Date:** 2026-08-25
 - **Local AgentLayer Paths:**
-  - Production Skill: [skills/geoparquet-validation/](file:///d:/AgentLayer/skills/geoparquet-validation/) (`SKILL.md`, `references/`, `UPSTREAM.md`)
-  - License/Notice: [third_party/isaaccorley-geospatial-skills/](file:///d:/AgentLayer/third_party/isaaccorley-geospatial-skills/) (`LICENSE`, `NOTICE.md`)
+  - Production Skill: [skills/geoparquet-validation/](../skills/geoparquet-validation/) (`SKILL.md`, `references/`, `UPSTREAM.md`)
+  - License/Notice: [third_party/isaaccorley-geospatial-skills/](../third_party/isaaccorley-geospatial-skills/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:** Unchanged (byte-for-byte faithful vendoring).
 
 ### geozarr
 
 - **Source Repository:** `https://github.com/isaaccorley/geospatial-skills`
 - **Upstream Path:** `skills/geozarr/`
-- **License:** Apache-2.0 (see [third_party/isaaccorley-geospatial-skills/LICENSE](file:///d:/AgentLayer/third_party/isaaccorley-geospatial-skills/LICENSE))
+- **License:** Apache-2.0 (see [third_party/isaaccorley-geospatial-skills/LICENSE](../third_party/isaaccorley-geospatial-skills/LICENSE))
 - **Imported Commit SHA:** `a203446cb997cd1dbf054918b1021a6040b69824`
 - **Import Date:** 2026-08-25
 - **Local AgentLayer Paths:**
-  - Production Skill: [skills/geozarr/](file:///d:/AgentLayer/skills/geozarr/) (`SKILL.md`, `UPSTREAM.md`)
-  - License/Notice: [third_party/isaaccorley-geospatial-skills/](file:///d:/AgentLayer/third_party/isaaccorley-geospatial-skills/) (`LICENSE`, `NOTICE.md`)
+  - Production Skill: [skills/geozarr/](../skills/geozarr/) (`SKILL.md`, `UPSTREAM.md`)
+  - License/Notice: [third_party/isaaccorley-geospatial-skills/](../third_party/isaaccorley-geospatial-skills/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:** Unchanged (byte-for-byte faithful vendoring).
 
 ### geospatial-frontend
 
 - **Source Repository:** `https://github.com/isaaccorley/geospatial-skills`
 - **Upstream Path:** `skills/geospatial-frontend/`
-- **License:** Apache-2.0 (see [third_party/isaaccorley-geospatial-skills/LICENSE](file:///d:/AgentLayer/third_party/isaaccorley-geospatial-skills/LICENSE))
+- **License:** Apache-2.0 (see [third_party/isaaccorley-geospatial-skills/LICENSE](../third_party/isaaccorley-geospatial-skills/LICENSE))
 - **Imported Commit SHA:** `a203446cb997cd1dbf054918b1021a6040b69824`
 - **Import Date:** 2026-08-25
 - **Local AgentLayer Paths:**
-  - Production Skill: [skills/geospatial-frontend/](file:///d:/AgentLayer/skills/geospatial-frontend/) (`SKILL.md`, `references/`, `UPSTREAM.md`)
-  - License/Notice: [third_party/isaaccorley-geospatial-skills/](file:///d:/AgentLayer/third_party/isaaccorley-geospatial-skills/) (`LICENSE`, `NOTICE.md`)
+  - Production Skill: [skills/geospatial-frontend/](../skills/geospatial-frontend/) (`SKILL.md`, `references/`, `UPSTREAM.md`)
+  - License/Notice: [third_party/isaaccorley-geospatial-skills/](../third_party/isaaccorley-geospatial-skills/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:** Unchanged (byte-for-byte faithful vendoring).
 
 ### geopandas
 
 - **Source Repository:** `https://github.com/K-Dense-AI/scientific-agent-skills`
 - **Upstream Path:** `skills/geopandas/`
-- **License:** MIT (see [third_party/kdense-scientific-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/kdense-scientific-agent-skills/LICENSE))
+- **License:** MIT (see [third_party/kdense-scientific-agent-skills/LICENSE](../third_party/kdense-scientific-agent-skills/LICENSE))
 - **Imported Commit SHA:** `390f5146bf3c1877cf15636a3dd7b775e4f0f185`
 - **Import Date:** 2026-08-25
 - **Local AgentLayer Paths:**
-  - Production Skill: [skills/geopandas/](file:///d:/AgentLayer/skills/geopandas/) (`SKILL.md`, `UPSTREAM.md`)
-  - Upstream Evals: [tests/upstream/kdense-scientific-agent-skills/geopandas/](file:///d:/AgentLayer/tests/upstream/kdense-scientific-agent-skills/geopandas/)
-  - License/Notice: [third_party/kdense-scientific-agent-skills/](file:///d:/AgentLayer/third_party/kdense-scientific-agent-skills/) (`LICENSE`, `NOTICE.md`)
+  - Production Skill: [skills/geopandas/](../skills/geopandas/) (`SKILL.md`, `UPSTREAM.md`)
+  - Upstream Evals: [tests/upstream/kdense-scientific-agent-skills/geopandas/](../tests/upstream/kdense-scientific-agent-skills/geopandas/)
+  - License/Notice: [third_party/kdense-scientific-agent-skills/](../third_party/kdense-scientific-agent-skills/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:** Unchanged (byte-for-byte faithful vendoring).
 
 ### geomaster
 
 - **Source Repository:** `https://github.com/K-Dense-AI/scientific-agent-skills`
 - **Upstream Path:** `skills/geomaster/`
-- **License:** MIT (see [third_party/kdense-scientific-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/kdense-scientific-agent-skills/LICENSE))
+- **License:** MIT (see [third_party/kdense-scientific-agent-skills/LICENSE](../third_party/kdense-scientific-agent-skills/LICENSE))
 - **Imported Commit SHA:** `390f5146bf3c1877cf15636a3dd7b775e4f0f185`
 - **Import Date:** 2026-08-25
 - **Local AgentLayer Paths:**
-  - Production Skill: [skills/geomaster/](file:///d:/AgentLayer/skills/geomaster/) (`SKILL.md`, `UPSTREAM.md`)
-  - License/Notice: [third_party/kdense-scientific-agent-skills/](file:///d:/AgentLayer/third_party/kdense-scientific-agent-skills/) (`LICENSE`, `NOTICE.md`)
+  - Production Skill: [skills/geomaster/](../skills/geomaster/) (`SKILL.md`, `UPSTREAM.md`)
+  - License/Notice: [third_party/kdense-scientific-agent-skills/](../third_party/kdense-scientific-agent-skills/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:** Unchanged (byte-for-byte faithful vendoring).
 
 ### design-postgis-tables
 
 - **Source Repository:** `https://github.com/timescale/pg-aiguide`
 - **Upstream Path:** `skills/design-postgis-tables/`
-- **License:** Apache-2.0 (see [third_party/timescale-pg-aiguide/LICENSE](file:///d:/AgentLayer/third_party/timescale-pg-aiguide/LICENSE))
+- **License:** Apache-2.0 (see [third_party/timescale-pg-aiguide/LICENSE](../third_party/timescale-pg-aiguide/LICENSE))
 - **Imported Commit SHA:** `b4f11a45907af3abda0f79e784aff9a6d5eef468`
 - **Import Date:** 2026-08-25
 - **Local AgentLayer Paths:**
-  - Production Skill: [skills/design-postgis-tables/](file:///d:/AgentLayer/skills/design-postgis-tables/) (`SKILL.md`, `UPSTREAM.md`)
-  - License/Notice: [third_party/timescale-pg-aiguide/](file:///d:/AgentLayer/third_party/timescale-pg-aiguide/) (`LICENSE`, `NOTICE.md`)
+  - Production Skill: [skills/design-postgis-tables/](../skills/design-postgis-tables/) (`SKILL.md`, `UPSTREAM.md`)
+  - License/Notice: [third_party/timescale-pg-aiguide/](../third_party/timescale-pg-aiguide/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:** Unchanged (byte-for-byte faithful vendoring).
 
 ### exploratory-data-analysis
 
 - **Source Repository:** `https://github.com/K-Dense-AI/scientific-agent-skills`
 - **Upstream Path:** `skills/exploratory-data-analysis/`
-- **License:** MIT (see [third_party/kdense-scientific-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/kdense-scientific-agent-skills/LICENSE))
+- **License:** MIT (see [third_party/kdense-scientific-agent-skills/LICENSE](../third_party/kdense-scientific-agent-skills/LICENSE))
 - **Imported Commit SHA:** `390f5146bf3c1877cf15636a3dd7b775e4f0f185`
 - **Import Date:** 2026-08-25
 - **Local AgentLayer Paths:**
-  - Production Skill: [skills/exploratory-data-analysis/](file:///d:/AgentLayer/skills/exploratory-data-analysis/) (`SKILL.md`, `references/`, `scripts/`, `UPSTREAM.md`)
-  - Upstream Evals: [tests/upstream/kdense-scientific-agent-skills/exploratory-data-analysis/](file:///d:/AgentLayer/tests/upstream/kdense-scientific-agent-skills/exploratory-data-analysis/)
-  - License/Notice: [third_party/kdense-scientific-agent-skills/](file:///d:/AgentLayer/third_party/kdense-scientific-agent-skills/) (`LICENSE`, `NOTICE.md`)
+  - Production Skill: [skills/exploratory-data-analysis/](../skills/exploratory-data-analysis/) (`SKILL.md`, `references/`, `scripts/`, `UPSTREAM.md`)
+  - Upstream Evals: [tests/upstream/kdense-scientific-agent-skills/exploratory-data-analysis/](../tests/upstream/kdense-scientific-agent-skills/exploratory-data-analysis/)
+  - License/Notice: [third_party/kdense-scientific-agent-skills/](../third_party/kdense-scientific-agent-skills/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:** Unchanged (byte-for-byte faithful vendoring).
 
 ### statistical-analysis
 
 - **Source Repository:** `https://github.com/K-Dense-AI/scientific-agent-skills`
 - **Upstream Path:** `skills/statistical-analysis/`
-- **License:** MIT (see [third_party/kdense-scientific-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/kdense-scientific-agent-skills/LICENSE))
+- **License:** MIT (see [third_party/kdense-scientific-agent-skills/LICENSE](../third_party/kdense-scientific-agent-skills/LICENSE))
 - **Imported Commit SHA:** `390f5146bf3c1877cf15636a3dd7b775e4f0f185`
 - **Import Date:** 2026-08-25
 - **Local AgentLayer Paths:**
-  - Production Skill: [skills/statistical-analysis/](file:///d:/AgentLayer/skills/statistical-analysis/) (`SKILL.md`, `references/`, `scripts/`, `UPSTREAM.md`)
-  - Upstream Evals: [tests/upstream/kdense-scientific-agent-skills/statistical-analysis/](file:///d:/AgentLayer/tests/upstream/kdense-scientific-agent-skills/statistical-analysis/)
-  - License/Notice: [third_party/kdense-scientific-agent-skills/](file:///d:/AgentLayer/third_party/kdense-scientific-agent-skills/) (`LICENSE`, `NOTICE.md`)
+  - Production Skill: [skills/statistical-analysis/](../skills/statistical-analysis/) (`SKILL.md`, `references/`, `scripts/`, `UPSTREAM.md`)
+  - Upstream Evals: [tests/upstream/kdense-scientific-agent-skills/statistical-analysis/](../tests/upstream/kdense-scientific-agent-skills/statistical-analysis/)
+  - License/Notice: [third_party/kdense-scientific-agent-skills/](../third_party/kdense-scientific-agent-skills/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:** Unchanged (byte-for-byte faithful vendoring).
 
 ### scientific-visualization
 
 - **Source Repository:** `https://github.com/K-Dense-AI/scientific-agent-skills`
 - **Upstream Path:** `skills/scientific-visualization/`
-- **License:** MIT (see [third_party/kdense-scientific-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/kdense-scientific-agent-skills/LICENSE))
+- **License:** MIT (see [third_party/kdense-scientific-agent-skills/LICENSE](../third_party/kdense-scientific-agent-skills/LICENSE))
 - **Imported Commit SHA:** `390f5146bf3c1877cf15636a3dd7b775e4f0f185`
 - **Import Date:** 2026-08-25
 - **Local AgentLayer Paths:**
-  - Production Skill: [skills/scientific-visualization/](file:///d:/AgentLayer/skills/scientific-visualization/) (`SKILL.md`, `assets/`, `references/`, `scripts/`, `UPSTREAM.md`)
-  - Upstream Evals: [tests/upstream/kdense-scientific-agent-skills/scientific-visualization/](file:///d:/AgentLayer/tests/upstream/kdense-scientific-agent-skills/scientific-visualization/)
-  - License/Notice: [third_party/kdense-scientific-agent-skills/](file:///d:/AgentLayer/third_party/kdense-scientific-agent-skills/) (`LICENSE`, `NOTICE.md`)
+  - Production Skill: [skills/scientific-visualization/](../skills/scientific-visualization/) (`SKILL.md`, `assets/`, `references/`, `scripts/`, `UPSTREAM.md`)
+  - Upstream Evals: [tests/upstream/kdense-scientific-agent-skills/scientific-visualization/](../tests/upstream/kdense-scientific-agent-skills/scientific-visualization/)
+  - License/Notice: [third_party/kdense-scientific-agent-skills/](../third_party/kdense-scientific-agent-skills/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:** Unchanged (byte-for-byte faithful vendoring).
 
 ### networkx
 
 - **Source Repository:** `https://github.com/K-Dense-AI/scientific-agent-skills`
 - **Upstream Path:** `skills/networkx/`
-- **License:** 3-clause BSD (see [third_party/kdense-scientific-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/kdense-scientific-agent-skills/LICENSE))
+- **License:** 3-clause BSD (see [third_party/kdense-scientific-agent-skills/LICENSE](../third_party/kdense-scientific-agent-skills/LICENSE))
 - **Imported Commit SHA:** `390f5146bf3c1877cf15636a3dd7b775e4f0f185`
 - **Import Date:** 2026-08-25
 - **Local AgentLayer Paths:**
-  - Production Skill: [skills/networkx/](file:///d:/AgentLayer/skills/networkx/) (`SKILL.md`, `references/`, `UPSTREAM.md`)
-  - License/Notice: [third_party/kdense-scientific-agent-skills/](file:///d:/AgentLayer/third_party/kdense-scientific-agent-skills/) (`LICENSE`, `NOTICE.md`)
+  - Production Skill: [skills/networkx/](../skills/networkx/) (`SKILL.md`, `references/`, `UPSTREAM.md`)
+  - License/Notice: [third_party/kdense-scientific-agent-skills/](../third_party/kdense-scientific-agent-skills/) (`LICENSE`, `NOTICE.md`)
 - **Modification Status:** Unchanged (byte-for-byte faithful vendoring).
 
 ### api-discovery (AgentLayer Native)
 
 - **Author:** AgentLayer Team
 - **License:** MIT
-- **Local AgentLayer Path:** [skills/api-discovery/](file:///d:/AgentLayer/skills/api-discovery/) (`SKILL.md`, `references/source-catalogs.md`, `UPSTREAM.md`)
+- **Local AgentLayer Path:** [skills/api-discovery/](../skills/api-discovery/) (`SKILL.md`, `references/source-catalogs.md`, `UPSTREAM.md`)
 - **References:** `public-apis/public-apis`, `public-api-lists/public-api-lists`
 
 ### geospatial-data-discovery (AgentLayer Native)
 
 - **Author:** AgentLayer Team
 - **License:** MIT
-- **Local AgentLayer Path:** [skills/geospatial-data-discovery/](file:///d:/AgentLayer/skills/geospatial-data-discovery/) (`SKILL.md`, `UPSTREAM.md`)
+- **Local AgentLayer Path:** [skills/geospatial-data-discovery/](../skills/geospatial-data-discovery/) (`SKILL.md`, `UPSTREAM.md`)
 - **References:** OGC STAC/COG, OpenStreetMap (ODbL), Overture Maps, Copernicus Open Access
 
 ### api-integration (AgentLayer Native)
 
 - **Author:** AgentLayer Team
 - **License:** MIT
-- **Local AgentLayer Path:** [skills/api-integration/](file:///d:/AgentLayer/skills/api-integration/) (`SKILL.md`, `references/integration-patterns.md`, `UPSTREAM.md`)
+- **Local AgentLayer Path:** [skills/api-integration/](../skills/api-integration/) (`SKILL.md`, `references/integration-patterns.md`, `UPSTREAM.md`)
 - **References:** RFC 9110 HTTP Semantics, IETF RateLimit Headers, OpenAPI 3.1
 
 ---
