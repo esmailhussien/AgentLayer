@@ -1,4 +1,4 @@
-﻿# Curated Sources & Attribution Registry
+# Curated Sources & Attribution Registry
 
 This file tracks upstream repositories, specifications, and references evaluated during the curation of AgentLayer.
 
@@ -23,7 +23,9 @@ This file tracks upstream repositories, specifications, and references evaluated
 | [JPeetz/agent-skills](https://github.com/JPeetz/agent-skills) | General Data Analysis | Rejected — overlap (K-Dense EDA/statistics/viz provide modular coverage) |
 | [public-apis/public-apis](https://github.com/public-apis/public-apis) | Public & Free API Catalog Index | Research catalog reference for `api-discovery` |
 | AgentLayer Native | Public APIs & Open Data Orchestration | Created (`api-discovery`, `geospatial-data-discovery`, `api-integration`) |
-| OpenAI / Vercel AI sources | AI chat, streaming, tool calling, agents | Research pending (no standalone generic skill imported; placeholders retained in `skills/ai-chat/`, `skills/ai-tools/`) |
+| [vercel/ai](https://github.com/vercel/ai) | AI SDK (Chat, streaming, structured output, agents, tools, RAG) | Imported (`ai-sdk`) |
+| [openai/skills](https://github.com/openai/skills) | OpenAI Developer Docs & Codex manual | Research reference — not imported due to runtime/MCP tool coupling |
+| [openai/plugins](https://github.com/openai/plugins) | Cloudflare Agents SDK & Integrations | Research reference — evaluated for agentic patterns |
 
 ---
 
@@ -383,6 +385,18 @@ This file tracks upstream repositories, specifications, and references evaluated
 - **License:** MIT
 - **Local AgentLayer Path:** [skills/api-integration/](../skills/api-integration/) (`SKILL.md`, `references/integration-patterns.md`, `UPSTREAM.md`)
 - **References:** RFC 9110 HTTP Semantics, IETF RateLimit Headers, OpenAPI 3.1
+
+### ai-sdk
+
+- **Source Repository:** `https://github.com/vercel/ai`
+- **Upstream Path:** `skills/use-ai-sdk/SKILL.md`
+- **License:** Apache-2.0 (see [third_party/vercel-ai/LICENSE](../third_party/vercel-ai/LICENSE))
+- **Imported Commit SHA:** `d354a4260d930759d9a45e5bcde260c13825a42a`
+- **Import Date:** 2026-08-26
+- **Local AgentLayer Paths:**
+  - Production Skill: [skills/ai-sdk/](../skills/ai-sdk/) (`SKILL.md`, `UPSTREAM.md`)
+  - License/Notice: [third_party/vercel-ai/](../third_party/vercel-ai/) (`LICENSE`, `NOTICE.md`)
+- **Modification Status:** Faithful vendoring of official Vercel AI SDK skill.
 
 ---
 
