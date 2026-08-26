@@ -192,6 +192,12 @@
       "prompt": "Implement React useChat streaming UI component with optimistic updates.",
       "mustInclude": ["ai-sdk", "react-best-practices", "frontend-design", "browser-testing", "verification"],
       "mustExclude": ["gdal", "geozarr", "networkx"]
+    },
+    {
+      "id": "scenario-33",
+      "prompt": "Use TDD red-green-refactor to implement a new user registration service with test-first methodology.",
+      "mustInclude": ["test-driven-development", "verification"],
+      "mustExclude": ["gdal", "geozarr", "networkx", "geopandas"]
     }
   ]
 }

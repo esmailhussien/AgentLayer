@@ -46,7 +46,7 @@ export function resolveRoute(
   for (const [name, scored] of scoredSkills.entries()) {
     if (scored.score >= minScore) {
       const skill = registry.skills[name];
-      if (skill.layer === "domain" || skill.layer === "implementation") {
+      if (skill.layer === "domain" || skill.layer === "implementation" || skill.layer === "verification") {
         const hasDirectSignal = scored.reasons.some((r) =>
           r.includes("technology") || r.includes("Capability") || r.includes("Trigger") || r.includes("Keyword") || r.includes("override") || r.includes("collection")
         );
@@ -182,7 +182,8 @@ export function resolveRoute(
     const layerA = layerOrder.indexOf(a.layer);
     const layerB = layerOrder.indexOf(b.layer);
     if (layerA !== layerB) return layerA - layerB;
-    return b.score - a.score;
+    if (a.score !== b.score) return b.score - a.score;
+    return a.name.localeCompare(b.name);
   });
 
   const skillsByLayer: Record<SkillLayer, SelectedSkill[]> = {

@@ -83,6 +83,13 @@ export function printRouteResult(result: RouteResult, format: "table" | "json" =
 }
 
 export function runCli(args = process.argv.slice(2)): void {
+  if (args.includes("--version") || args.includes("-v")) {
+    const pkgPath = path.join(workspaceRoot, "package.json");
+    const pkg = JSON.parse(fs.readFileSync(pkgPath, "utf-8"));
+    console.log(`agentlayer v${pkg.version}`);
+    process.exit(0);
+  }
+
   if (args.length === 0 || args.includes("--help") || args.includes("-h")) {
     console.log(`
 AgentLayer Smart Router CLI
@@ -102,6 +109,7 @@ Options:
   --collection <name>    Seed from a preset collection (web-app, gis, etc.)
   --format <json|table>  Output format (default: table)
   --yes, -y              Skip interactive confirmation
+  --version, -v          Show version number
   --help, -h             Show this help message
 
 Examples:

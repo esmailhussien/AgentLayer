@@ -4,13 +4,32 @@
   "description": "Curated, agent-independent engineering instructions and skills with deterministic smart routing",
   "type": "module",
   "main": "router/index.ts",
+  "exports": {
+    ".": "./router/index.ts",
+    "./router": "./router/index.ts",
+    "./routing": "./routing/registry.json"
+  },
   "bin": {
     "agentlayer": "./bin/agentlayer.js"
   },
   "scripts": {
     "route": "node router/index.ts route",
     "validate": "node router/index.ts validate",
-    "test:router": "node tests/router/run.ts"
+    "test:router": "node tests/router/run.ts",
+    "test:validate": "python tests/validate_repo.py",
+    "test": "node tests/router/run.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/esmailhussien/AgentLayer.git"
+  },
+  "homepage": "https://github.com/esmailhussien/AgentLayer#readme",
+  "bugs": {
+    "url": "https://github.com/esmailhussien/AgentLayer/issues"
+  },
+  "engines": {
+    "node": ">=22.0.0"
   },
   "files": [
     "bin",
@@ -36,5 +55,9 @@
     "security"
   ],
   "author": "AgentLayer Team",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^22.0.0"
+  }
 }

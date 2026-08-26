@@ -21,6 +21,11 @@ console.log("[1/6] Validating Registry & Skill Paths...");
 const regReport = validateRegistry(workspaceRoot);
 if (regReport.valid) {
   console.log(`  ✓ Registry valid (${regReport.skillsCount} skills, ${regReport.collectionsCount} collections)`);
+  if (regReport.warnings.length > 0) {
+    for (const w of regReport.warnings) {
+      console.log(`    ⚠ ${w}`);
+    }
+  }
 } else {
   console.error(`  ✗ Registry validation failed:`, regReport.errors);
   allPassed = false;
@@ -57,7 +62,7 @@ if (collRes.passed) {
 }
 
 // 5. Core Scenario Suite
-console.log("\n[5/6] Running Core Scenario Suite (32 Scenarios)...");
+console.log("\n[5/6] Running Core Scenario Suite (33 Scenarios)...");
 const coreReport = runScenarioTests(path.join(__dirname, "scenarios.json"));
 
 for (const sc of coreReport.results) {

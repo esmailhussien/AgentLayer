@@ -29,6 +29,12 @@ jobs:
         with:
           node-version: "22"
 
+      - name: Install dev dependencies
+        run: npm install
+
+      - name: TypeScript type check
+        run: npx tsc --noEmit
+
       - name: Run AgentLayer Integrity Validator
         run: |
           python tests/validate_repo.py
@@ -36,3 +42,7 @@ jobs:
       - name: Run Smart Router Validation & Scenario Suite
         run: |
           node tests/router/run.ts
+
+      - name: Verify npm package tarball
+        run: |
+          npm pack --dry-run 2>&1 | head -50
