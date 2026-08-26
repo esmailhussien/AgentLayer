@@ -12,6 +12,17 @@
     "validate": "node router/index.ts validate",
     "test:router": "node tests/router/run.ts"
   },
+  "files": [
+    "bin",
+    "router",
+    "routing",
+    "skills",
+    "instructions",
+    "third_party",
+    "sources",
+    "README.md",
+    "LICENSE"
+  ],
   "keywords": [
     "ai",
     "agent",

@@ -89,23 +89,39 @@ For full details on scoring weights, layers, and heuristics, see [`routing/ROUTE
 - ✓ `api-discovery` — Multi-category public/free API discovery, quota evaluation, and official-documentation verification.
 - ✓ `api-integration` — Resilient HTTP client engineering (exponential backoff, rate limits, schema validation, idempotency).
 
-### AI Foundations
-- △ `ai-chat` — Research pending (placeholder retained).
-- △ `ai-tools` — Research pending (placeholder retained).
+### AI & Agentic Foundations
+- ✓ `ai-sdk` — Unified AI SDK toolkit for streaming, structured output, tool loops, embeddings, RAG, and React UI hooks.
+
+---
+
+## Preset Collections
+
+AgentLayer provides 7 pre-configured skill collections for common engineering stacks:
+
+| Collection | Description | Included Skills |
+|---|---|---|
+| `web-app` | Modern frontend & React development | `brainstorming`, `writing-plans`, `frontend-design`, `react-best-practices`, `browser-testing`, `verification` |
+| `ai-app` | AI-powered applications & agentic workflows | `brainstorming`, `writing-plans`, `ai-sdk`, `security-review`, `integration-testing`, `verification` |
+| `gis` | Geospatial engineering & mapping | `geomaster`, `geopandas`, `gdal`, `geospatial-data-discovery`, `verification` |
+| `data-analysis` | EDA, statistical modeling & scientific figures | `exploratory-data-analysis`, `statistical-analysis`, `scientific-visualization`, `verification` |
+| `api-integration` | Resilient REST API discovery & clients | `api-discovery`, `api-integration`, `security-review`, `integration-testing`, `verification` |
+| `supabase-app` | Full-stack Supabase with Postgres RLS | `supabase`, `supabase-postgres-best-practices`, `security-review`, `integration-testing`, `verification` |
+| `production` | Full engineering discipline & testing | `brainstorming`, `writing-plans`, `systematic-debugging`, `security-review`, `unit-testing`, `integration-testing`, `verification` |
 
 ---
 
 ## Repository Overview
 
 - **`instructions/`** — Universal, persistent engineering rules and principles (e.g., engineering discipline, simplicity, security baseline).
-- **`skills/`** — Modular, task-specific workflows following the open `SKILL.md` standard.
-- **`routing/`** — Domain routing maps and canonical multi-skill composition patterns (`DOMAIN_ROUTING.md`).
-- **`tests/`** — Behavioral test scenarios and upstream evaluation suites.
-- **`sources/`** — Registry of curated upstream sources, licensing, and attribution notes.
-- **`third_party/`** — Upstream MIT and Apache-2.0 licenses and notices.
+- **`skills/`** — On-demand, task-specific instructions, scripts, and references across 29 production domains.
+- **`routing/`** — Declarative skill registry, layer configurations, and preset collections.
+- **`router/`** — Deterministic routing engine with CLI and programmatic API.
+- **`tests/`** — Upstream verification fixtures and 62 automated router test scenarios (100% pass rate).
+- **`third_party/`** — Upstream licenses and notices for all vendored material.
+- **`sources/`** — Complete attribution log mapping every skill to its upstream source commit SHA and license.
 
 ---
 
 ## License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+AgentLayer is licensed under the [MIT License](LICENSE). Vendored and adapted components retain their original upstream licenses (MIT, Apache-2.0, 3-clause BSD) as documented in `third_party/` and `sources/SOURCES.md`.
