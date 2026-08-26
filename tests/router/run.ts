@@ -17,7 +17,7 @@ console.log("===================================================================
 let allPassed = true;
 
 // 1. Registry Validation
-console.log("[1/5] Validating Registry & Skill Paths...");
+console.log("[1/6] Validating Registry & Skill Paths...");
 const regReport = validateRegistry(workspaceRoot);
 if (regReport.valid) {
   console.log(`  ✓ Registry valid (${regReport.skillsCount} skills, ${regReport.collectionsCount} collections)`);
@@ -27,7 +27,7 @@ if (regReport.valid) {
 }
 
 // 2. Classification Tests
-console.log("\n[2/5] Running Task Classification Tests...");
+console.log("\n[2/6] Running Task Classification Tests...");
 const classRes = testClassification();
 if (classRes.passed) {
   console.log(`  ✓ ${classRes.message}`);
@@ -37,7 +37,7 @@ if (classRes.passed) {
 }
 
 // 3. Conflicts & Overrides Tests
-console.log("\n[3/5] Running Conflicts & Overrides Tests...");
+console.log("\n[3/6] Running Conflicts & Overrides Tests...");
 const confRes = testConflictsAndOverrides();
 if (confRes.passed) {
   console.log(`  ✓ ${confRes.message}`);
@@ -47,7 +47,7 @@ if (confRes.passed) {
 }
 
 // 4. Collections Tests
-console.log("\n[4/5] Running Preset Collections Tests...");
+console.log("\n[4/6] Running Preset Collections Tests...");
 const collRes = testCollections();
 if (collRes.passed) {
   console.log(`  ✓ ${collRes.message}`);
@@ -56,13 +56,13 @@ if (collRes.passed) {
   allPassed = false;
 }
 
-// 5. Scenario Suite
-console.log("\n[5/5] Running Scenario Regression Suite (22 Scenarios)...");
-const scenarioReport = runScenarioTests();
+// 5. Core Scenario Suite
+console.log("\n[5/6] Running Core Scenario Suite (32 Scenarios)...");
+const coreReport = runScenarioTests(path.join(__dirname, "scenarios.json"));
 
-for (const sc of scenarioReport.results) {
+for (const sc of coreReport.results) {
   if (sc.passed) {
-    console.log(`  ✓ [${sc.id}] "${sc.prompt.slice(0, 50)}..." -> [${sc.selectedSkills.join(", ")}]`);
+    console.log(`  ✓ [${sc.id}] "${sc.prompt.slice(0, 48)}..." -> [${sc.selectedSkills.join(", ")}]`);
   } else {
     console.error(`  ✗ [${sc.id}] "${sc.prompt}"`);
     if (sc.missingExpected.length > 0) {
@@ -71,19 +71,55 @@ for (const sc of scenarioReport.results) {
     if (sc.unexpectedIncluded.length > 0) {
       console.error(`      Unexpected included (over-selected): ${sc.unexpectedIncluded.join(", ")}`);
     }
+    if (sc.maxExceeded) {
+      console.error(`      Max skills exceeded`);
+    }
     console.error(`      Actual selected: ${sc.selectedSkills.join(", ")}`);
     allPassed = false;
   }
 }
 
+// 6. Real-World Scenario Suite
+console.log("\n[6/6] Running Real-World Benchmark Suite (30 Scenarios)...");
+const rwReport = runScenarioTests(path.join(__dirname, "real-world-scenarios.json"));
+
+for (const sc of rwReport.results) {
+  if (sc.passed) {
+    console.log(`  ✓ [${sc.id}] "${sc.prompt.slice(0, 48)}..." -> [${sc.selectedSkills.join(", ")}]`);
+  } else {
+    console.error(`  ✗ [${sc.id}] "${sc.prompt}"`);
+    if (sc.missingExpected.length > 0) {
+      console.error(`      Missing expected: ${sc.missingExpected.join(", ")}`);
+    }
+    if (sc.unexpectedIncluded.length > 0) {
+      console.error(`      Unexpected included (over-selected): ${sc.unexpectedIncluded.join(", ")}`);
+    }
+    if (sc.maxExceeded) {
+      console.error(`      Max skills exceeded`);
+    }
+    console.error(`      Actual selected: ${sc.selectedSkills.join(", ")}`);
+    allPassed = false;
+  }
+}
+
+const totalScenarios = coreReport.total + rwReport.total;
+const totalPassed = coreReport.passed + rwReport.passed;
+const totalFailed = coreReport.failed + rwReport.failed;
+const combinedAvg = Number(((coreReport.averageSkillCount * coreReport.total + rwReport.averageSkillCount * rwReport.total) / totalScenarios).toFixed(1));
+
 console.log("\n--------------------------------------------------------------------------------");
 console.log("                           Router Quality Metrics");
 console.log("--------------------------------------------------------------------------------");
-console.log(`Scenarios Tested    : ${scenarioReport.total}`);
-console.log(`Scenarios Passed    : ${scenarioReport.passed}`);
-console.log(`Scenarios Failed    : ${scenarioReport.failed}`);
-console.log(`Average Skill Count : ${scenarioReport.averageSkillCount} skills/task`);
-console.log(`Pass Rate           : ${((scenarioReport.passed / scenarioReport.total) * 100).toFixed(1)}%`);
+console.log(`Total Scenarios Tested : ${totalScenarios}`);
+console.log(`Scenarios Passed       : ${totalPassed} (${((totalPassed / totalScenarios) * 100).toFixed(1)}%)`);
+console.log(`Scenarios Failed       : ${totalFailed}`);
+console.log(`Core Suite Pass Rate   : ${((coreReport.passed / coreReport.total) * 100).toFixed(1)}% (${coreReport.passed}/${coreReport.total})`);
+console.log(`Real-World Pass Rate   : ${((rwReport.passed / rwReport.total) * 100).toFixed(1)}% (${rwReport.passed}/${rwReport.total})`);
+console.log(`Average Skill Count    : ${combinedAvg} skills/task (Core: ${coreReport.averageSkillCount}, RW: ${rwReport.averageSkillCount})`);
+console.log(`Median Skill Count     : ${rwReport.medianSkillCount}`);
+console.log(`95th Percentile Count  : ${rwReport.p95SkillCount}`);
+console.log(`Deterministic (2x run) : ${coreReport.determinismPassed && rwReport.determinismPassed ? "PASSED (100% Deterministic)" : "FAILED"}`);
+console.log(`Over-Selection Warns   : ${coreReport.overSelectionWarnings + rwReport.overSelectionWarnings}`);
 console.log("================================================================================\n");
 
 if (!allPassed) {

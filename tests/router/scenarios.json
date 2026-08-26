@@ -132,6 +132,66 @@
       "prompt": "Implement end-to-end browser user journey tests with Playwright.",
       "mustInclude": ["browser-testing", "verification"],
       "mustExclude": ["gdal", "geozarr", "networkx"]
+    },
+    {
+      "id": "scenario-23",
+      "prompt": "Build a streaming AI chatbot in React with conversation history.",
+      "mustInclude": ["brainstorming", "writing-plans", "ai-sdk", "frontend-design", "react-best-practices", "browser-testing", "verification"],
+      "mustExclude": ["gdal", "geopandas", "networkx"]
+    },
+    {
+      "id": "scenario-24",
+      "prompt": "Extract invoice fields into a validated JSON schema using an LLM.",
+      "mustInclude": ["ai-sdk", "unit-testing", "verification"],
+      "mustExclude": ["gdal", "geopandas", "geospatial-frontend"]
+    },
+    {
+      "id": "scenario-25",
+      "prompt": "Build document search with embeddings and RAG over uploaded PDFs.",
+      "mustInclude": ["brainstorming", "writing-plans", "ai-sdk", "security-review", "integration-testing", "verification"],
+      "mustExclude": ["gdal", "geopandas", "geospatial-frontend"]
+    },
+    {
+      "id": "scenario-26",
+      "prompt": "Build an AI agent with tool calling that asks for approval before destructive actions.",
+      "mustInclude": ["brainstorming", "writing-plans", "ai-sdk", "security-review", "integration-testing", "verification"],
+      "mustExclude": ["gdal", "geozarr", "networkx"]
+    },
+    {
+      "id": "scenario-27",
+      "prompt": "Build an AI assistant that uses a weather API as a tool.",
+      "mustInclude": ["ai-sdk", "api-integration", "security-review", "integration-testing", "verification"],
+      "mustExclude": ["gdal", "geozarr", "networkx"]
+    },
+    {
+      "id": "scenario-28",
+      "prompt": "Build a map assistant that answers questions about selected GeoJSON features.",
+      "mustInclude": ["brainstorming", "writing-plans", "ai-sdk", "geospatial-frontend", "geopandas", "browser-testing", "verification"],
+      "mustExclude": ["gdal", "geozarr"]
+    },
+    {
+      "id": "scenario-29",
+      "prompt": "Rename the AI Settings page heading.",
+      "mustInclude": ["verification"],
+      "mustExclude": ["ai-sdk", "brainstorming", "writing-plans", "security-review"]
+    },
+    {
+      "id": "scenario-30",
+      "prompt": "Generate text using Vercel AI SDK generateText with fallback providers.",
+      "mustInclude": ["ai-sdk", "unit-testing", "verification"],
+      "mustExclude": ["gdal", "networkx", "geospatial-frontend"]
+    },
+    {
+      "id": "scenario-31",
+      "prompt": "Build an AI chatbot that queries Postgres database with RLS policies.",
+      "mustInclude": ["brainstorming", "writing-plans", "ai-sdk", "supabase-postgres-best-practices", "security-review", "integration-testing", "verification"],
+      "mustExclude": ["gdal", "networkx"]
+    },
+    {
+      "id": "scenario-32",
+      "prompt": "Implement React useChat streaming UI component with optimistic updates.",
+      "mustInclude": ["ai-sdk", "react-best-practices", "frontend-design", "browser-testing", "verification"],
+      "mustExclude": ["gdal", "geozarr", "networkx"]
     }
   ]
 }
