@@ -1,4 +1,4 @@
-# Upstream Tests: Brainstorming
+﻿# Upstream Tests: Brainstorming
 
 This directory contains upstream tests for the `brainstorming` skill and its visual companion server from `obra/superpowers`.
 
@@ -10,7 +10,7 @@ This directory contains upstream tests for the `brainstorming` skill and its vis
 - **Source Path:** `tests/brainstorm-server/`
 - **Imported Commit:** `b36e0829c6d0140e93cfef2ca599b1b07d4a7797`
 - **Import Date:** 2026-08-24
-- **License:** MIT (see [third_party/superpowers/LICENSE](file:///d:/AgentLayer/third_party/superpowers/LICENSE))
+- **License:** MIT (see [third_party/superpowers/LICENSE](../../../../third_party/superpowers/LICENSE))
 
 ---
 

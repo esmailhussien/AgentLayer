@@ -1,0 +1,137 @@
+{
+  "version": "1.0.0",
+  "scenarios": [
+    {
+      "id": "scenario-01",
+      "prompt": "Login randomly returns 401 after page refresh in our Supabase auth flow.",
+      "mustInclude": ["systematic-debugging", "integration-testing", "verification", "security-review"],
+      "mustExclude": ["brainstorming", "gdal", "geopandas", "networkx"]
+    },
+    {
+      "id": "scenario-02",
+      "prompt": "Convert this GeoTIFF to EPSG:3857 and create a Cloud-Optimized GeoTIFF (COG).",
+      "mustInclude": ["gdal", "verification"],
+      "mustExclude": ["geopandas", "geospatial-frontend", "brainstorming", "writing-plans"]
+    },
+    {
+      "id": "scenario-03",
+      "prompt": "Find all schools located within 1 km buffer of major highway vector polygons using GeoPandas.",
+      "mustInclude": ["geopandas", "verification"],
+      "mustExclude": ["geospatial-frontend", "gdal", "geozarr"]
+    },
+    {
+      "id": "scenario-04",
+      "prompt": "Design a PostGIS schema with GiST spatial indexes for utility networks.",
+      "mustInclude": ["design-postgis-tables", "supabase-postgres-best-practices", "verification"],
+      "mustExclude": ["geospatial-frontend", "networkx", "gdal"]
+    },
+    {
+      "id": "scenario-05",
+      "prompt": "Build an interactive React map dashboard displaying live fleet assets.",
+      "mustInclude": ["brainstorming", "writing-plans", "frontend-design", "geospatial-frontend", "react-best-practices", "browser-testing", "verification"],
+      "mustExclude": ["systematic-debugging", "gdal", "networkx"]
+    },
+    {
+      "id": "scenario-06",
+      "prompt": "Find a free public weather API and integrate it with exponential backoff and rate limit handling.",
+      "mustInclude": ["api-discovery", "api-integration", "integration-testing", "verification"],
+      "mustExclude": ["gdal", "geozarr", "geopandas"]
+    },
+    {
+      "id": "scenario-07",
+      "prompt": "Analyze this CSV dataset for missing values, distributions, and anomalies.",
+      "mustInclude": ["exploratory-data-analysis", "verification"],
+      "mustExclude": ["gdal", "geospatial-frontend", "react-best-practices", "brainstorming"]
+    },
+    {
+      "id": "scenario-08",
+      "prompt": "Test whether these two patient groups differ significantly using ANOVA and compute effect size.",
+      "mustInclude": ["statistical-analysis", "verification"],
+      "mustExclude": ["geopandas", "gdal", "geospatial-frontend", "react-best-practices"]
+    },
+    {
+      "id": "scenario-09",
+      "prompt": "Calculate betweenness centrality and detect communities in this network graph using NetworkX.",
+      "mustInclude": ["networkx", "verification"],
+      "mustExclude": ["gdal", "geospatial-frontend", "react-best-practices"]
+    },
+    {
+      "id": "scenario-10",
+      "prompt": "Change the Save button label to Submit.",
+      "mustInclude": ["verification"],
+      "mustExclude": ["brainstorming", "writing-plans", "systematic-debugging", "security-review", "gdal"]
+    },
+    {
+      "id": "scenario-11",
+      "prompt": "Validate our GeoParquet file metadata and distribution partition structure.",
+      "mustInclude": ["geoparquet-validation", "verification"],
+      "mustExclude": ["geospatial-frontend", "react-best-practices", "networkx"]
+    },
+    {
+      "id": "scenario-12",
+      "prompt": "Process multi-dimensional climate grids using GeoZarr and xarray.",
+      "mustInclude": ["geozarr", "verification"],
+      "mustExclude": ["geospatial-frontend", "react-best-practices", "frontend-design"]
+    },
+    {
+      "id": "scenario-13",
+      "prompt": "Search STAC catalogs to download Sentinel-2 satellite imagery for our study area.",
+      "mustInclude": ["geospatial-data-discovery", "geomaster", "verification"],
+      "mustExclude": ["react-best-practices", "geospatial-frontend"]
+    },
+    {
+      "id": "scenario-14",
+      "prompt": "Generate a publication-ready multi-panel scientific figure with colorblind-safe palettes in Matplotlib.",
+      "mustInclude": ["scientific-visualization", "verification"],
+      "mustExclude": ["gdal", "geospatial-frontend", "react-best-practices"]
+    },
+    {
+      "id": "scenario-15",
+      "prompt": "Audit codebase for SQL injection vulnerabilities and exposed API secret keys.",
+      "mustInclude": ["security-review", "verification"],
+      "mustExclude": ["geopandas", "gdal", "geospatial-frontend", "networkx"]
+    },
+    {
+      "id": "scenario-16",
+      "prompt": "Optimize PostgreSQL query performance and configure connection pooling for high read throughput.",
+      "mustInclude": ["supabase-postgres-best-practices", "verification"],
+      "mustExclude": ["gdal", "geospatial-frontend", "networkx"]
+    },
+    {
+      "id": "scenario-17",
+      "prompt": "Refactor TypeScript codebase architecture to enforce clean domain boundaries.",
+      "mustInclude": ["codebase-architecture", "writing-plans", "verification"],
+      "mustExclude": ["gdal", "geospatial-frontend", "networkx"]
+    },
+    {
+      "id": "scenario-18",
+      "prompt": "Build a responsive dark mode marketing page with sleek visual design tokens.",
+      "mustInclude": ["brainstorming", "writing-plans", "frontend-design", "browser-testing", "verification"],
+      "mustExclude": ["gdal", "geozarr", "networkx", "design-postgis-tables"]
+    },
+    {
+      "id": "scenario-19",
+      "prompt": "Write isolated unit tests for our currency conversion math function.",
+      "mustInclude": ["unit-testing", "verification"],
+      "mustExclude": ["browser-testing", "geospatial-frontend", "gdal"]
+    },
+    {
+      "id": "scenario-20",
+      "prompt": "Perform satellite remote sensing NDVI calculation and classify vegetation changes.",
+      "mustInclude": ["geomaster", "verification"],
+      "mustExclude": ["react-best-practices", "geospatial-frontend"]
+    },
+    {
+      "id": "scenario-21",
+      "prompt": "Build a full-stack Supabase application with user authentication, file storage, and Row Level Security.",
+      "mustInclude": ["brainstorming", "writing-plans", "supabase", "supabase-postgres-best-practices", "security-review", "integration-testing", "verification"],
+      "mustExclude": ["gdal", "networkx", "geozarr"]
+    },
+    {
+      "id": "scenario-22",
+      "prompt": "Implement end-to-end browser user journey tests with Playwright.",
+      "mustInclude": ["browser-testing", "verification"],
+      "mustExclude": ["gdal", "geozarr", "networkx"]
+    }
+  ]
+}

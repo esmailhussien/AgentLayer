@@ -1,4 +1,4 @@
-# Upstream Evaluation Suite: K-Dense Scientific Agent Skills
+﻿# Upstream Evaluation Suite: K-Dense Scientific Agent Skills
 
 These test files are vendored from `K-Dense-AI/scientific-agent-skills` to evaluate the accuracy, reproducibility, and CLI tooling behavior of the imported scientific/data skills.
 
@@ -10,7 +10,7 @@ These test files are vendored from `K-Dense-AI/scientific-agent-skills` to evalu
 - **Source Directory:** `tests/`
 - **Imported Commit:** `390f5146bf3c1877cf15636a3dd7b775e4f0f185`
 - **Import Date:** 2026-08-25
-- **License:** MIT (see [third_party/kdense-scientific-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/kdense-scientific-agent-skills/LICENSE))
+- **License:** MIT (see [third_party/kdense-scientific-agent-skills/LICENSE](../../../third_party/kdense-scientific-agent-skills/LICENSE))
 
 ---
 

@@ -1,4 +1,4 @@
-# Upstream Behavioral Test Scenarios: Systematic Debugging
+﻿# Upstream Behavioral Test Scenarios: Systematic Debugging
 
 These behavioral test scenarios are retained from `obra/superpowers` to evaluate whether the vendored `systematic-debugging` skill produces the intended agent behavior under pressure, ambiguity, and technical failure scenarios.
 
@@ -10,7 +10,7 @@ These behavioral test scenarios are retained from `obra/superpowers` to evaluate
 - **Source Directory:** `skills/systematic-debugging/`
 - **Imported Commit:** `b36e0829c6d0140e93cfef2ca599b1b07d4a7797`
 - **Import Date:** 2026-08-24
-- **License:** MIT (see [third_party/superpowers/LICENSE](file:///d:/AgentLayer/third_party/superpowers/LICENSE))
+- **License:** MIT (see [third_party/superpowers/LICENSE](../../../../third_party/superpowers/LICENSE))
 
 ---
 

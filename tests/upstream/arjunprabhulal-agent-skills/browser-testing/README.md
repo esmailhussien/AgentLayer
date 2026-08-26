@@ -1,4 +1,4 @@
-# Upstream Evals: Browser Testing
+﻿# Upstream Evals: Browser Testing
 
 This directory contains upstream evaluation scenarios for the `browser-testing` skill from `arjunprabhulal/agent-skills`.
 
@@ -10,7 +10,7 @@ This directory contains upstream evaluation scenarios for the `browser-testing` 
 - **Source Path:** `evals/browser-testing.json`
 - **Imported Commit:** `42dd24080fce6d731d00e2a1134f398c3da4171b`
 - **Import Date:** 2026-08-24
-- **License:** MIT (see [third_party/arjunprabhulal-agent-skills/LICENSE](file:///d:/AgentLayer/third_party/arjunprabhulal-agent-skills/LICENSE))
+- **License:** MIT (see [third_party/arjunprabhulal-agent-skills/LICENSE](../../../../third_party/arjunprabhulal-agent-skills/LICENSE))
 
 ---
 
