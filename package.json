@@ -1,0 +1,29 @@
+{
+  "name": "agentlayer",
+  "version": "0.1.0",
+  "description": "Curated, agent-independent engineering instructions and skills with deterministic smart routing",
+  "type": "module",
+  "main": "router/index.ts",
+  "bin": {
+    "agentlayer": "./bin/agentlayer.js"
+  },
+  "scripts": {
+    "route": "node router/index.ts route",
+    "validate": "node router/index.ts validate",
+    "test:router": "node tests/router/run.ts"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "skills",
+    "router",
+    "engineering",
+    "curation",
+    "geospatial",
+    "gis",
+    "data-science",
+    "security"
+  ],
+  "author": "AgentLayer Team",
+  "license": "MIT"
+}
