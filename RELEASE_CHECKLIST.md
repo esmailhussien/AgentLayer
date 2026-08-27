@@ -11,10 +11,10 @@ This checklist defines the mandatory verification and release steps for publishi
   - Zero broken references in `routing/collections.json` (7 preset collections).
   - Validated via `python scripts/validate_repo.py` and `node bin/agentlayer.js validate`.
 - [x] **Smart Router Test Suite**:
-  - Core Scenario Suite (32 scenarios in `tests/router/scenarios.json`): 100% pass rate.
+  - Core Scenario Suite (34 scenarios in `tests/router/scenarios.json`): 100% pass rate.
   - Real-World Benchmark Suite (30 scenarios in `tests/router/real-world-scenarios.json`): 100% pass rate.
   - Determinism check: 100% identical composition and scores across consecutive runs.
-  - Overall accuracy: 62/62 scenarios (100.0%).
+  - Overall accuracy: 64/64 scenarios (100.0%).
 - [x] **License & Provenance Compliance**:
   - Every vendored skill includes `UPSTREAM.md` with source repository, commit SHA, and license terms.
   - Third-party licenses and notices maintained in `third_party/`.

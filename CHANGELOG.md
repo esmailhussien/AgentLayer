@@ -11,12 +11,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-**Smart Skill Router**
+**Smart Skill Router & Skills CLI**
 - Deterministic, offline router with classify → score → resolve → explain pipeline
 - 29 registered production skills across 5 layers (process, domain, implementation, risk, verification)
 - 7 preset skill collections: `web-app`, `gis`, `data-analysis`, `api-integration`, `supabase-app`, `production`, `ai-app`
 - Evidence-based confidence scoring with over-selection guardrails
-- CLI with `route`, `validate` commands and `--dry-run`, `--include`, `--exclude`, `--collection`, `--format`, `--version` flags
+- CLI with `route`, `apply`, `bundle`, `validate` commands and `--dry-run`, `--include`, `--exclude`, `--collection`, `--format`, `--target`, `--out`, `--version` flags
+- `apply` command to copy selected skills and universal instructions into target projects (`.agents/skills/`) with automated `AGENTS.md` manifest generation
+- `bundle` command to compile a single prompt context payload with layer grouping and universal instructions
+- Clean export filtering (excludes internal provenance `UPSTREAM.md` from client projects)
 
 **Skills — Process & Planning**
 - `brainstorming` — Explore intent, requirements, and design options (from [obra/superpowers](https://github.com/obra/superpowers))
@@ -70,4 +73,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Complete source attribution in `sources/SOURCES.md` with upstream commit SHAs
 - 11 third-party license directories covering all vendored material
 - 3 universal instruction files: engineering, simplicity, security
-- 63 automated test scenarios (33 core + 30 real-world) with 100% pass rate and determinism verification
+- 64 automated test scenarios (34 core + 30 real-world) with 100% pass rate and determinism verification

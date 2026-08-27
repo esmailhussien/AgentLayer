@@ -10,8 +10,8 @@ const INTENT_PATTERNS: Record<string, RegExp[]> = {
   ],
   fix: [/\b(fix|debug|resolve|patch|troubleshoot|repair)\b/i, /\b(bug|error|crash|broken|fails?|failing|exception|issue|401|403|404|500)\b/i],
   analyze: [/\b(analyze|analysis|profile|inspect|audit|evaluate|check|compare|explore|eda|extract)\b/i],
-  optimize: [/\b(optimize|performance|speed up|scale|indexing|pool|fast|slow queries)\b/i],
-  design: [/\b(design|architecture|system design|schema design|design table|restructure|modularize|domain boundaries|refactor.*(into|modules|boundaries))\b/i],
+  optimize: [/\b(optimize|performance|speed up|scale|indexing|pool|fast|slow queries|improve|enhance)\b/i],
+  design: [/\b(design|architecture|system design|schema design|design table|restructure|modularize|domain boundaries|refactor)\b/i, /\brefactor.*(into|modules|boundaries)/i],
   integrate: [/\b(integrate|integration|connect|consume|webhook|client|fetch|uses?\s+.*api|external api)\b/i]
 };
 

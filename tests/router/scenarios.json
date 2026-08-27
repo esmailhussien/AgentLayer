@@ -198,6 +198,12 @@
       "prompt": "Use TDD red-green-refactor to implement a new user registration service with test-first methodology.",
       "mustInclude": ["test-driven-development", "verification"],
       "mustExclude": ["gdal", "geozarr", "networkx", "geopandas"]
+    },
+    {
+      "id": "scenario-34",
+      "prompt": "Refactor an existing React visual board application with AI-powered thinking features and improve its architecture and frontend.",
+      "mustInclude": ["brainstorming", "writing-plans", "react-best-practices", "frontend-design", "codebase-architecture", "ai-sdk", "verification", "browser-testing"],
+      "mustExclude": ["gdal", "geozarr", "geopandas", "networkx"]
     }
   ]
 }

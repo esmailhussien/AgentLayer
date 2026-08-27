@@ -2,6 +2,7 @@ import { validateRegistry } from "../../router/validate.ts";
 import { testClassification } from "./classification.test.ts";
 import { testConflictsAndOverrides } from "./conflicts.test.ts";
 import { testCollections } from "./collections.test.ts";
+import { testApplyAndBundle } from "./apply.test.ts";
 import { runScenarioTests } from "./resolution.test.ts";
 import * as path from "path";
 import { fileURLToPath } from "url";
@@ -17,7 +18,7 @@ console.log("===================================================================
 let allPassed = true;
 
 // 1. Registry Validation
-console.log("[1/6] Validating Registry & Skill Paths...");
+console.log("[1/7] Validating Registry & Skill Paths...");
 const regReport = validateRegistry(workspaceRoot);
 if (regReport.valid) {
   console.log(`  ✓ Registry valid (${regReport.skillsCount} skills, ${regReport.collectionsCount} collections)`);
@@ -32,7 +33,7 @@ if (regReport.valid) {
 }
 
 // 2. Classification Tests
-console.log("\n[2/6] Running Task Classification Tests...");
+console.log("\n[2/7] Running Task Classification Tests...");
 const classRes = testClassification();
 if (classRes.passed) {
   console.log(`  ✓ ${classRes.message}`);
@@ -42,7 +43,7 @@ if (classRes.passed) {
 }
 
 // 3. Conflicts & Overrides Tests
-console.log("\n[3/6] Running Conflicts & Overrides Tests...");
+console.log("\n[3/7] Running Conflicts & Overrides Tests...");
 const confRes = testConflictsAndOverrides();
 if (confRes.passed) {
   console.log(`  ✓ ${confRes.message}`);
@@ -52,7 +53,7 @@ if (confRes.passed) {
 }
 
 // 4. Collections Tests
-console.log("\n[4/6] Running Preset Collections Tests...");
+console.log("\n[4/7] Running Preset Collections Tests...");
 const collRes = testCollections();
 if (collRes.passed) {
   console.log(`  ✓ ${collRes.message}`);
@@ -61,8 +62,18 @@ if (collRes.passed) {
   allPassed = false;
 }
 
-// 5. Core Scenario Suite
-console.log("\n[5/6] Running Core Scenario Suite (33 Scenarios)...");
+// 5. Apply & Bundle Integration Tests
+console.log("\n[5/7] Running Apply & Bundle Integration Tests...");
+const applyRes = testApplyAndBundle();
+if (applyRes.passed) {
+  console.log(`  ✓ ${applyRes.message}`);
+} else {
+  console.error(`  ✗ ${applyRes.message}`);
+  allPassed = false;
+}
+
+// 6. Core Scenario Suite
+console.log("\n[6/7] Running Core Scenario Suite (34 Scenarios)...");
 const coreReport = runScenarioTests(path.join(__dirname, "scenarios.json"));
 
 for (const sc of coreReport.results) {
@@ -84,8 +95,8 @@ for (const sc of coreReport.results) {
   }
 }
 
-// 6. Real-World Scenario Suite
-console.log("\n[6/6] Running Real-World Benchmark Suite (30 Scenarios)...");
+// 7. Real-World Scenario Suite
+console.log("\n[7/7] Running Real-World Benchmark Suite (30 Scenarios)...");
 const rwReport = runScenarioTests(path.join(__dirname, "real-world-scenarios.json"));
 
 for (const sc of rwReport.results) {

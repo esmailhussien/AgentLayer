@@ -206,7 +206,7 @@ Examples:
     printRouteResult(result, format);
 
     if (doApply && !options.dryRun) {
-      console.log(`Applying ${result.skills.length} skill(s) to '${targetDir}'...`);
+      console.log(`\nApplying ${result.skills.length} skill(s) to '${targetDir}'...`);
       const applyRes = applySkills(result, targetDir, process.cwd(), workspaceRoot);
       if (applyRes.errors.length > 0) {
         console.error(`⚠️  Some skills had errors during install:`);
@@ -214,10 +214,14 @@ Examples:
           console.error(`  - ${err}`);
         }
       }
-      console.log(`✓ Successfully installed ${applyRes.appliedSkills.length} skill(s) to '${applyRes.targetDir}'.`);
+      console.log(`✓ Installed ${applyRes.appliedSkills.length} skill(s) to '${applyRes.targetDir}'.`);
       if (applyRes.instructionsCopied) {
-        console.log(`✓ Installed universal engineering instructions to '${path.join(path.dirname(applyRes.targetDir), "instructions")}'.`);
+        console.log(`✓ Copied universal engineering instructions.`);
       }
+      if (applyRes.manifestWritten) {
+        console.log(`✓ Generated skills manifest (AGENTS.md).`);
+      }
+      console.log(`\nYour AI coding agent will now automatically follow these skills.`);
     }
   }
 }

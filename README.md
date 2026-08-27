@@ -32,11 +32,20 @@ AgentLayer includes a deterministic, offline smart router that resolves natural-
 # Calculate recommended skill composition
 npx agentlayer route "Build a React dashboard displaying live weather data on an interactive map"
 
-# Dry run inspection
+# Install selected skills into your project (.agents/skills/)
+npx agentlayer apply "Refactor an existing React app with AI features"
+
+# Generate a unified markdown bundle for pasting into any LLM
+npx agentlayer bundle "Refactor codebase architecture" --out context.md
+
+# Dry run inspection (shows recommendations without changes)
 npx agentlayer route "Fix Supabase auth 401 bug" --dry-run
 
-# Run full router test suite
-npm run test:router
+# Use a preset collection
+npx agentlayer apply "Build a full-stack app" --collection web-app
+
+# Check version
+npx agentlayer --version
 ```
 
 For full details on scoring weights, layers, and heuristics, see [`routing/ROUTER_DESIGN.md`](routing/ROUTER_DESIGN.md) and [`router/README.md`](router/README.md).
@@ -116,7 +125,7 @@ AgentLayer provides 7 pre-configured skill collections for common engineering st
 - **`skills/`** — On-demand, task-specific instructions, scripts, and references across 29 production domains.
 - **`routing/`** — Declarative skill registry, layer configurations, and preset collections.
 - **`router/`** — Deterministic routing engine with CLI and programmatic API.
-- **`tests/`** — Upstream verification fixtures and 62 automated router test scenarios (100% pass rate).
+- **`tests/`** — Upstream verification fixtures and 64 automated router test scenarios (100% pass rate).
 - **`third_party/`** — Upstream licenses and notices for all vendored material.
 - **`sources/`** — Complete attribution log mapping every skill to its upstream source commit SHA and license.
 
