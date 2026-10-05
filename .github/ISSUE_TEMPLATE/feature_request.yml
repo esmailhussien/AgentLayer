@@ -1,0 +1,52 @@
+name: Feature request
+description: Propose a focused improvement, skill or routing capability.
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search existing issues and read CONTRIBUTING.md before proposing a change.
+        AgentLayer is experimental. Describe a concrete need and a small, reviewable improvement. This issue is public; do not include secrets, personal data, confidential prompts or private datasets.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Proposed area
+      options:
+        - Task routing or skill selection
+        - Apply or bundle export
+        - New or improved skill
+        - Engineering instructions
+        - Setup or CLI
+        - Documentation or examples
+        - Other or unsure
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and use case
+      description: What are you trying to do, who would benefit, and what is difficult with the current behavior? Include a sanitized example task when helpful.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+      description: Describe the smallest useful change and the expected behavior. For skills or routing, explain when it should and should not be selected.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe existing skills, collections, workarounds or other approaches you considered. It is fine to say you have not found an alternative.
+  - type: textarea
+    id: verification
+    attributes:
+      label: How could we verify it?
+      description: Suggest a concrete example, routing scenario or acceptance criteria that would show the change works. Note any known compatibility risks.
+  - type: textarea
+    id: references
+    attributes:
+      label: References and context
+      description: Optional public documentation, related issues or examples. For a proposed upstream skill, include its source and license if known. Share only material you have permission to publish.
