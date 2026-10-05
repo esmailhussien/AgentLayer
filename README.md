@@ -24,9 +24,74 @@ Verification Before Completion
 
 ---
 
+## Quick Start: Route a Real Task
+
+Use a source checkout for this walkthrough; it does not depend on an npm release being available.
+
+**Requirements:** Git and Node.js with native TypeScript support. The package declares Node.js >=22; for these unflagged commands use **Node.js 22.18+ or 24+**. See [Node.js TypeScript support](https://nodejs.org/api/typescript.html). No model API key is needed for routing. A coding agent is needed separately to implement the task.
+
+```bash
+git clone https://github.com/esmailhussien/AgentLayer.git
+cd AgentLayer
+node router/index.ts --version
+node router/index.ts validate
+node router/index.ts route "Build a React dashboard with MapLibre and a weather API" --dry-run
+```
+
+**Expected result:** the CLI prints the task, a confidence score, the selected skill count, and skills grouped by layer with a score and rationale. Dry-run output can also explain dropped candidates. It does not create the dashboard or call a model.
+
+The walkthrough is illustrative and based on the CLI source; it is not a recorded execution or benchmark. Exact selections and scores depend on the prompt, overrides, and registry revision.
+
+### Practical example: a map-based weather dashboard
+
+The task combines frontend work, geospatial visualization, and an external API. First inspect the route above. Look for relevant frontend, map, API, and verification guidance; revise the prompt or use overrides if the recommendation misses a requirement.
+
+To make those requirements explicit, create a reviewable context bundle:
+
+```bash
+node router/index.ts bundle "Build a React dashboard with MapLibre and a weather API" --include geospatial-frontend --include api-integration --include verification --out weather-context.md
+```
+
+**Expected artifact:** `weather-context.md` in the current directory, containing universal engineering instructions and selected skill text grouped by layer. Review it, then provide it to your coding agent alongside your project requirements. The file is instructions, not generated application code.
+
+For agents that support project skill directories, export to a separate demo folder first:
+
+```bash
+node router/index.ts apply "Build a React dashboard with MapLibre and a weather API" --include geospatial-frontend --include api-integration --include verification --target ../weather-demo/.agents/skills --dry-run
+
+# After reviewing the recommendation, remove --dry-run to write files:
+node router/index.ts apply "Build a React dashboard with MapLibre and a weather API" --include geospatial-frontend --include api-integration --include verification --target ../weather-demo/.agents/skills
+```
+
+**Expected files after a successful export:**
+
+```text
+weather-demo/
+└── .agents/
+    ├── AGENTS.md           # Generated manifest with installed skills and rationales
+    ├── instructions/      # Copied when this destination does not already exist
+    └── skills/
+        └── <skill-name>/  # Selected skill files; UPSTREAM.md is excluded
+```
+
+Confirm the exported files and check the CLI for copy errors. Configure your agent according to its own documentation; automatic skill discovery varies by tool. Ask it to read the manifest and relevant skills before implementing the dashboard. Then verify the resulting app's map rendering, loading/error states, API failures, and tests independently.
+
+### Experimental limits and safe use
+
+- Routing is deterministic keyword/scoring logic, not semantic understanding. Confidence is a routing signal, not a probability that the implementation will succeed.
+- Inspect recommendations before use. Prompt wording, conflicts, collection presets, and manual overrides can change the selected skills.
+- `apply` writes immediately without an interactive confirmation. It can overwrite matching skill files and the adjacent `AGENTS.md` manifest. Start in a disposable folder or commit/back up existing files first.
+- Use `route --dry-run` or `apply --dry-run` to inspect without exporting. `bundle --out` writes its output even when `--dry-run` is supplied, and can overwrite an existing output file.
+- Routing uses local files. Initial cloning/dependency installation and the tools described inside individual skills may require network access or their own dependencies.
+- Exporting skills does not install GDAL, Python packages, browser tooling, or other domain dependencies, and does not prove an agent loaded or followed the instructions.
+
+For development checks, install the repository's dev dependencies with `npm ci`, then run `npm run typecheck`, `npm run validate`, and `npm run test:router`. Report your own results; this documentation update did not execute those checks.
+
+---
+
 ## Smart Skill Router
 
-AgentLayer includes a deterministic, offline smart router that resolves natural-language user tasks into the smallest useful set of skills with human-readable rationales:
+AgentLayer includes a deterministic, offline smart router that recommends a focused set of skills with human-readable rationales. The source-checkout commands above are the starting point; the package-style commands below require a compatible installation of this project:
 
 ```bash
 # Calculate recommended skill composition
@@ -125,7 +190,7 @@ AgentLayer provides 7 pre-configured skill collections for common engineering st
 - **`skills/`** — On-demand, task-specific instructions, scripts, and references across 29 production domains.
 - **`routing/`** — Declarative skill registry, layer configurations, and preset collections.
 - **`router/`** — Deterministic routing engine with CLI and programmatic API.
-- **`tests/`** — Upstream verification fixtures and 64 automated router test scenarios (100% pass rate).
+- **`tests/`** — Upstream verification fixtures and automated router tests. Run the suite to verify the current checkout.
 - **`third_party/`** — Upstream licenses and notices for all vendored material.
 - **`sources/`** — Complete attribution log mapping every skill to its upstream source commit SHA and license.
 
