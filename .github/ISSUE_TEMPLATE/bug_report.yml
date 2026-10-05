@@ -1,0 +1,72 @@
+name: Bug report
+description: Report a reproducible problem with AgentLayer.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search existing issues and read CONTRIBUTING.md before reporting.
+        This issue is public. Remove secrets, tokens, personal data, confidential prompts and private datasets from all examples, logs and attachments. Do not post sensitive vulnerability details here.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Task routing or skill selection
+        - Apply or bundle export
+        - Skill content or instructions
+        - Setup or CLI
+        - Documentation
+        - Other or unsure
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: AgentLayer version or commit
+      description: Include the commit SHA for a source checkout and how you installed or ran AgentLayer.
+      placeholder: "Commit SHA, source checkout / package installation"
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Node.js and npm versions; Python version if relevant. For agent integration, include the agent/tool and version.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Give exact commands, flags, sanitized task text and the smallest example. For export bugs, describe the target directory state without sharing private paths or files.
+      placeholder: |
+        1. Start from...
+        2. Run...
+        3. Observe...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should happen? For routing issues, name the skills you expected and explain why.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What happened instead? Include selected skills, incorrect output or the exact error when relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitized logs or supporting evidence
+      description: Optional minimal logs, screenshots or a public reproduction. Remove secrets and personal data before pasting or uploading.
+  - type: textarea
+    id: checks
+    attributes:
+      label: Checks or workarounds tried
+      description: List commands and results, if any. Say what you have not tested; do not assume a check passed.
